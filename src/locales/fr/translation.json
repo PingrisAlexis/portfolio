@@ -1,0 +1,18 @@
+{
+  "header": {
+    "home": "Accueil",
+    "skills": "Compétences",
+    "projects": "Projets",
+    "resume": "Curriculum Vitae",
+    "contact": "Me contacter!"
+  },
+  "home": {
+    "presentation": "Bienvenue sur mon portfolio,",
+    "iam": "Je suis",
+    "," :",",
+    "a": "",
+    "job": "Développeur Web",
+    "name": "Alexis PINGRIS",
+    "description": "passionné par le clean code et la résolution de problèmes. Je m'épanouis dans l'apprentissage continu et collabore efficacement pour créer des solutions innovantes et optimisées."
+  }
+}

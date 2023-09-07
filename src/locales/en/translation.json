@@ -1,0 +1,20 @@
+{
+  "header": {
+    "home": "Home",
+    "skills": "Skills",
+    "projects": "Projects",
+    "resume": "Resume",
+    "contact": "Contact me!"
+  },
+  "home": {
+    "blank": " ",
+    "presentation": "Welcome to my portfolio,",
+    "iam": "I am",
+    "name": "Alexis PINGRIS",
+    "," :",",
+    "a": "A",
+    "job": "Web Developer",
+    "description": "with a passion for clean code and problem-solving. I thrive on continuous learning and collaborate effectively to create innovative  and optimised solutions."
+
+  }
+}
