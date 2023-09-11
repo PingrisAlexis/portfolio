@@ -14,5 +14,19 @@
     "job": "Développeur Web",
     "name": "Alexis PINGRIS",
     "description": "passionné par le clean code et la résolution de problèmes. Je m'épanouis dans l'apprentissage continu et collabore efficacement pour créer des solutions innovantes et optimisées."
+  },
+   "projects": {
+    "Kasa": "Intégration",
+    "SoPekocko": "Création d'APIs sécurisées",
+    "SportSee" : "Tableau de bord analytique",
+    "les_petits_plats" : "Algorythmes de recherche",
+    "groupomania" : "Réseau social d'entreprise",
+    "learn_at_home" : "Maquettes",
+    "fisheye" : "Intégration",
+    "hrnet" : "Migrations de librairies",
+    "billed" : "Tests unitaires et d'intégrations",
+    "argentbank" : "Utilisation d'APIs",
+    "gameon" : "Landing page",
+    "la_chouette_agence": "Optimisation et référencement"
   }
 }

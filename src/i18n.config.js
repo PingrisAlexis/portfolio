@@ -17,6 +17,7 @@ i18n
     interpolation: {
       escapeValue: false,
     },
+    compatibilityJSON: 'v4'
   });
 
 export default i18n;

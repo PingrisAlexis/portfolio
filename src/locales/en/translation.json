@@ -15,6 +15,19 @@
     "a": "A",
     "job": "Web Developer",
     "description": "with a passion for clean code and problem-solving. I thrive on continuous learning and collaborate effectively to create innovative  and optimised solutions."
-
+  },
+  "projects": {
+    "Kasa": "Integration",
+    "SoPekocko": "Create Secured APIs",
+    "SportSee" : "Analytic dashboard",
+    "les_petits_plats" : "Search algorythms",
+    "groupomania" : "Company social network",
+    "learn_at_home" : "Mock-ups",
+    "fisheye" : "Integration",
+    "hrnet" : "Libraries migration",
+    "billed" : "Unit and integration testing",
+    "argentbank" : "Use of APIs",
+    "gameon" : "Landing page",
+    "la_chouette_agence": "Optimisation and SEO"
   }
 }

@@ -1,11 +1,13 @@
 import React from 'react'
 import styles  from './Header.module.scss'
 import { useTranslation } from 'react-i18next'
+import {LanguageSwitch} from '../index'
+import coding from '../../assets/coding.svg'
 import hamburger from '../../assets/hamburger.svg'
 import close from '../../assets/close.svg'
-import {LanguageSwitch} from '../index'
-import coding from '../../assets/coding.svg';
+
 const Header = () => {
+
   const [showNavbar, setShowNavbar] = React.useState(false);
   const [width, setWidth] = React.useState(window.innerWidth);
   const breakpoint = 600;
@@ -18,7 +20,6 @@ const Header = () => {
     };
 
     window.addEventListener('resize', handleResize);
-
     return () => {
       window.removeEventListener('resize', handleResize);
     };
@@ -34,9 +35,9 @@ const Header = () => {
           <a href='#about'>
             <img src={coding} className={styles.logo}/>
           </a>                    
-          <div>  
+          <div className={styles.menu_icon}>  
             {showNavbar ? <img src={close} className={styles.close_icon} onClick={handleShowNavbar}/> 
-            : <img src={hamburger}  className={styles.menu_icon} onClick={handleShowNavbar}/>}
+            : <img src={hamburger}  className={styles.open_icon} onClick={handleShowNavbar}/>}
           </div>
           <ul
             className={styles.navbar}
@@ -45,21 +46,21 @@ const Header = () => {
                 showNavbar || (!showNavbar && width > breakpoint) ? 'flex' : 'none'
             }}>
           <li>
-            <a href='#skills' aria-current='skills' exact className={styles.nav_link} activeClassName={styles.active_nav_link}>
-            {t('header.skills')}
+            <a href="#skills" aria-current="skills" className={styles.nav_link}>
+              {t('header.skills')}
             </a>                    
           </li>
           <li>
-            <a href="#projects" aria-current="projects" className={styles.nav_link} activeClassName={styles.active_nav_link}>
-            {t('header.projects')}
+            <a href="#projects" aria-current="projects" className={styles.nav_link}>
+              {t('header.projects')}
             </a>
           </li>
           <li>
-            <a href="#contact" aria-current="contact" className={styles.nav_link} activeClassName={styles.active_nav_link}>
-            {t('header.contact')}
+            <a href="#contact" aria-current="contact" className={styles.nav_link}>
+              {t('header.contact')}
             </a>
           </li>
-          <li >
+          <li>
             <LanguageSwitch/>
           </li>
         </ul>
@@ -68,5 +69,4 @@ const Header = () => {
   )
 }
 
-export default Header;
-
+export default Header

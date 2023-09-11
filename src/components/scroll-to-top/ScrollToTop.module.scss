@@ -1,0 +1,18 @@
+.scroll_to_top_button {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    border: none;
+    border-radius: 12px;
+    cursor: pointer;
+    width: 5rem;
+    background: #ffffff;
+    box-shadow: rgba(0, 0, 0, 0.3) 0px 19px 38px, rgba(0, 0, 0, 0.22) 0px 15px 12px;
+    &:hover {
+      animation: hithere 1.2s ease infinite;
+    }
+    @keyframes hithere {
+      30% { transform: scale(1.1); }
+      100% { transform: scale(1); }
+    }
+  }
