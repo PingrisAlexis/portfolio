@@ -16,8 +16,8 @@ const LanguageSwitch = () => {
       i18n.changeLanguage(lng);
     };
  
-    return  isFrench ? <img className={styles.language_switch_icon} src={france} onClick={() => {changeLanguage('fr'); handleLanguage()}}/> 
-    : <img className={styles.language_switch_icon} src={usa}  onClick={() => {changeLanguage('en'); handleLanguage()}}/>
+    return  isFrench ? <img className={styles.language_switch_icon} alt='FRANCE' src={france} onClick={() => {changeLanguage('fr'); handleLanguage()}}/> 
+    : <img className={styles.language_switch_icon} src={usa} alt='USA' onClick={() => {changeLanguage('en'); handleLanguage()}}/>
 }
 
 export default LanguageSwitch

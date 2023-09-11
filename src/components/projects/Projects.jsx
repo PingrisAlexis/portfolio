@@ -34,13 +34,13 @@ const Projects = () => {
                         <ul className={`${styles.icon_container} ${styles.link_container}`}>
                             {project.isHost ? 
                             <li className={styles.hithere}>
-                                <a href={project.url} target="_blank">
+                                <a href={project.url} target="_blank" rel="noreferrer">
                                     <img src={netlify} alt={project.name} title={project.url} className={styles.icon_image}/>
                                 </a>
                             </li> : ''} 
                             <li className={styles.hithere}>
-                                <a href={project.github} target="_blank">
-                                    <img src={github} className={styles.icon_image} title={project.github}/>
+                                <a href={project.github} target="_blank" rel="noreferrer">
+                                    <img src={github} className={styles.icon_image} title={project.github} alt="Github"/>
                                 </a>        
                             </li>
                         </ul>

@@ -33,11 +33,11 @@ const Header = () => {
     <header className={styles.header}>
       <nav className={styles.banner}>
           <a href='#about'>
-            <img src={coding} className={styles.logo}/>
+            <img src={coding} className={styles.logo} alt="Logo"/>
           </a>                    
           <div className={styles.menu_icon}>  
-            {showNavbar ? <img src={close} className={styles.close_icon} onClick={handleShowNavbar}/> 
-            : <img src={hamburger}  className={styles.open_icon} onClick={handleShowNavbar}/>}
+            {showNavbar ? <img src={close} className={styles.close_icon} onClick={handleShowNavbar} alt="Close icon"/> 
+            : <img src={hamburger}  className={styles.open_icon} onClick={handleShowNavbar} alt="Menu icon"/>}
           </div>
           <ul
             className={styles.navbar}
@@ -46,17 +46,17 @@ const Header = () => {
                 showNavbar || (!showNavbar && width > breakpoint) ? 'flex' : 'none'
             }}>
           <li>
-            <a href="#skills" aria-current="skills" className={styles.nav_link}>
+            <a href="#skills" className={styles.nav_link}>
               {t('header.skills')}
             </a>                    
           </li>
           <li>
-            <a href="#projects" aria-current="projects" className={styles.nav_link}>
+            <a href="#projects" className={styles.nav_link}>
               {t('header.projects')}
             </a>
           </li>
           <li>
-            <a href="#contact" aria-current="contact" className={styles.nav_link}>
+            <a href="#contact" className={styles.nav_link}>
               {t('header.contact')}
             </a>
           </li>
