@@ -11,13 +11,15 @@ const LanguageSwitch = () => {
         setFrench(!isFrench);
     };
     
+    const { t } = useTranslation();
+
     const { i18n } = useTranslation(); 
     const changeLanguage = (lng) => {
       i18n.changeLanguage(lng);
     };
- 
-    return  isFrench ? <img className={styles.language_switch_icon} alt='FRANCE' src={france} onClick={() => {changeLanguage('fr'); handleLanguage()}}/> 
-    : <img className={styles.language_switch_icon} src={usa} alt='USA' onClick={() => {changeLanguage('en'); handleLanguage()}}/>
+
+    return  isFrench ? <img className={styles.language_switch_icon} alt={t('language_switch.alt.french_flag')} src={france} onClick={() => {changeLanguage('fr'); handleLanguage()}}/> 
+    : <img className={styles.language_switch_icon} src={usa} alt={t('language_switch.alt.usa_flag')} onClick={() => {changeLanguage('en'); handleLanguage()}}/>
 }
 
 export default LanguageSwitch

@@ -4,7 +4,12 @@
     "skills": "Skills",
     "projects": "Projects",
     "resume": "Resume",
-    "contact": "Contact me!"
+    "contact": "Contact",
+    "alt": {
+      "logo": "Portfolio logo",
+      "close_icon" : "Close menu icon",
+      "menu_icon" : "Open menu icon"
+    }
   },
   "home": {
     "blank": " ",
@@ -17,6 +22,11 @@
     "description": "with a passion for clean code and problem-solving. I thrive on continuous learning and collaborate effectively to create innovative  and optimised solutions."
   },
   "projects": {
+    "alt": {
+      "logo": "Logo project ",
+      "host": "Project hosting link ",
+      "github": "Project code hosting link "
+    },
     "Kasa": "Integration",
     "SoPekocko": "Create Secured APIs",
     "SportSee" : "Analytic dashboard",
@@ -29,5 +39,21 @@
     "argentbank" : "Use of APIs",
     "gameon" : "Landing page",
     "la_chouette_agence": "Optimisation and SEO"
+  },
+  "language_switch": {
+    "alt": {
+      "french_flag": "French language mode",
+      "usa_flag" : "English language mode"
+    }
+  },
+  "skills": {
+    "alt": {
+      "icon": "Expertise in "
+    }
+  },
+  "scroll_to_the_top": {
+    "alt": {
+      "icon": "Back to top of page"
+    }
   }
 }

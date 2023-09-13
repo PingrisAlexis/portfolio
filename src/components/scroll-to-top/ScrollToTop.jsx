@@ -1,9 +1,12 @@
 import React, { useState, useEffect } from 'react'
 import styles  from './ScrollToTop.module.scss'
+import { useTranslation } from 'react-i18next'
 import top from '../../assets/top.svg'
 
 const ScrollToTop = () => {
   
+  const { t } = useTranslation();
+
   const [isVisible, setIsVisible] = useState(false);
 
   const handleScroll = () => {
@@ -30,7 +33,7 @@ const ScrollToTop = () => {
 
   return (
     isVisible && (
-    <img src={top} className={styles.scroll_to_top_button} onClick={scrollToTop} alt='Scroll to top icon'/>
+    <img src={top} className={styles.scroll_to_top_button} onClick={scrollToTop} alt={t('scroll_to_the_top.alt.icon')}/>
     )
   );
 };

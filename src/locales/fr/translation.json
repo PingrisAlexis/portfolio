@@ -4,7 +4,12 @@
     "skills": "Compétences",
     "projects": "Projets",
     "resume": "Curriculum Vitae",
-    "contact": "Me contacter!"
+    "contact": "Contact",
+    "alt": {
+      "logo": "Logo du portfolio",
+      "close_icon" : "Fermeture du menu",
+      "menu_icon" : "Ouverture du menu"
+    }
   },
   "home": {
     "presentation": "Bienvenue sur mon portfolio,",
@@ -16,6 +21,11 @@
     "description": "passionné par le clean code et la résolution de problèmes. Je m'épanouis dans l'apprentissage continu et collabore efficacement pour créer des solutions innovantes et optimisées."
   },
    "projects": {
+    "alt": {
+      "logo": "Logo du projet ",
+      "host": "Lien de l'hébergement du projet ",
+      "github": "Lien de l'hébergement du code du projet "
+    },
     "Kasa": "Intégration",
     "SoPekocko": "Création d'APIs sécurisées",
     "SportSee" : "Tableau de bord analytique",
@@ -28,5 +38,21 @@
     "argentbank" : "Utilisation d'APIs",
     "gameon" : "Landing page",
     "la_chouette_agence": "Optimisation et référencement"
-  }
+  },
+  "language_switch": {
+    "alt": {
+      "french_flag": "Langue française",
+      "usa_flag" : "Langue anglaise"
+    }
+  },
+  "skills": {
+    "alt": {
+      "icon": "Compétence en "
+    }
+  },
+  "scroll_to_the_top": {
+    "alt": {
+      "icon": "Retourner en début de page"
+    }
+  } 
 }

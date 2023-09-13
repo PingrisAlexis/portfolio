@@ -13,10 +13,9 @@
     .logo {
       margin-top: 0.5rem;
       border-radius: 12px;
-      cursor: pointer;
       width: 5rem;
-      background: #ffffff;
-      box-shadow: rgba(0, 0, 0, 0.3) 0px 19px 38px, rgba(0, 0, 0, 0.22) 0px 15px 12px;
+      // background: #f5f6fa;
+      // box-shadow: rgba(0, 0, 0, 0.3) 0px 19px 38px, rgba(0, 0, 0, 0.22) 0px 15px 12px;
     }
   }
   .navbar {
@@ -35,6 +34,15 @@
     .nav_link {  
       margin: 0 1rem;
       font-size: 2rem;
+    //     text-shadow: 2px 7px 5px rgba(0,0,0,0.3), 
+    // 0px -4px 10px rgba(255,255,255,0.3);
+    &:hover {
+      animation: hithere 1.2s ease infinite;
+    }
+    @keyframes hithere {
+      30% { transform: scale(1.1); }
+      100% { transform: scale(1); }
+    }
       @media (max-width: 600px) {
         font-size: 3rem;
         margin-right: unset;

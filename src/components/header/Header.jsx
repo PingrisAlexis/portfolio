@@ -32,12 +32,10 @@ const Header = () => {
   return (
     <header className={styles.header}>
       <nav className={styles.banner}>
-          <a href='#about'>
-            <img src={coding} className={styles.logo} alt="Logo"/>
-          </a>                    
+            <img src={coding} className={styles.logo} alt={t('header.alt.logo')}/>
           <div className={styles.menu_icon}>  
-            {showNavbar ? <img src={close} className={styles.close_icon} onClick={handleShowNavbar} alt="Close icon"/> 
-            : <img src={hamburger}  className={styles.open_icon} onClick={handleShowNavbar} alt="Menu icon"/>}
+            {showNavbar ? <img src={close} className={styles.close_icon} onClick={handleShowNavbar} alt={t('header.alt.close_icon')}/> 
+            : <img src={hamburger}  className={styles.open_icon} onClick={handleShowNavbar} alt={t('header.alt.menu_icon')}/>}
           </div>
           <ul
             className={styles.navbar}
