@@ -2,8 +2,8 @@ import React from 'react'
 import styles  from './Projects.module.scss'
 import { useTranslation } from 'react-i18next'
 import { PROJECTS_DATA } from '../../portfolio.js'
-import netlify from '../../assets/netlify.svg'
-import github from '../../assets/github.svg'
+import netlify from '../../assets/utils/netlify.svg'
+import github from '../../assets/utils/github.svg'
 
 const Projects = () => {
 
@@ -27,7 +27,7 @@ const Projects = () => {
                         <ul className={styles.icon_container}>
                             {project.stacks.map((stack, index) => (
                             <li key={index} className={styles.icon_skill}>
-                                <img key={index} src={stack.src} className={styles.icon_image}  alt={t('projects.alt.logo') + stack.name} title={stack.name}/>
+                                <img key={index} src={stack.src} className={styles.icon_image} alt={t('projects.alt.stack') + stack.name} title={stack.name}/>
                             </li>
                             ))}
                         </ul>
@@ -35,7 +35,7 @@ const Projects = () => {
                             {project.isHost ? 
                             <li className={styles.hithere}>
                                 <a href={project.url} target="_blank" rel="noreferrer">
-                                    <img src={netlify}  alt={t('projects.alt.host') + project.name} title={project.url} className={styles.icon_image}/>
+                                    <img src={netlify} className={styles.icon_image} alt={t('projects.alt.host') + project.name} title={project.url} />
                                 </a>
                             </li> : ''} 
                             <li className={styles.hithere}>

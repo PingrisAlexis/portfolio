@@ -20,9 +20,9 @@
  import redux from '../src/assets/skills/redux.svg'
 
  import kasa from '../src/assets/projects/kasa.png'
- import sopeckoko from '../src/assets/projects/sopeckoko.jpg'
+ import sopeckoko from '../src/assets/projects/sopeckoko.png'
  import sportsee from '../src/assets/projects/sportsee.svg'
- import les_petits_plats from '../src/assets/projects/les_petits_plats.svg'
+ import les_petits_plats from '../src/assets/projects/les_petits_plats.png'
  import groupomania from '../src/assets/projects/groupomania.png'
  import learn_at_home from '../src/assets/projects/learn_at_home.png' 
  import fisheye from '../src/assets/projects/fisheye.png' 
@@ -78,7 +78,7 @@
         "src": node  
     },
     {
-        "name": "express",
+        "name": "Express",
         "src": express  
     },
     {

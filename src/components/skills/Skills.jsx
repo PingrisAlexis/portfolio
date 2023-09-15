@@ -15,8 +15,8 @@ const Skills = () => {
             </h2>
             <ul>
                 {SKILLS_DATA.map((skill, index) => (
-                <li key={index} alt={skill.name} title={skill.name} className={commonStyles.glow_on_hover}>
-                    <img src={skill.src} alt={t('skills.alt.icon') + skill.name}/>
+                <li key={index} className={commonStyles.glow_on_hover}>
+                    <img src={skill.src} alt={t('skills.alt.icon') + skill.name} title={skill.name}/>
                 </li>
             ))}
             </ul>

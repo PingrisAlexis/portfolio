@@ -1,12 +1,12 @@
 import React from 'react'
-import styles  from './Header.module.scss'
+import styles  from './Navbar.module.scss'
 import { useTranslation } from 'react-i18next'
-import {LanguageSwitch} from '../index'
-import coding from '../../assets/coding.svg'
-import hamburger from '../../assets/hamburger.svg'
-import close from '../../assets/close.svg'
+import { LanguageSwitch } from '../index'
+import coding from '../../assets/utils/coding.svg'
+import hamburger from '../../assets/utils/hamburger.svg'
+import close from '../../assets/utils/close.svg'
 
-const Header = () => {
+const Navbar = () => {
 
   const [showNavbar, setShowNavbar] = React.useState(false);
   const [width, setWidth] = React.useState(window.innerWidth);
@@ -32,7 +32,7 @@ const Header = () => {
   return (
     <header className={styles.header}>
       <nav className={styles.banner}>
-            <img src={coding} className={styles.logo} alt={t('header.alt.logo')}/>
+          <img src={coding} className={styles.logo} alt={t('header.alt.logo')}/>
           <div className={styles.menu_icon}>  
             {showNavbar ? <img src={close} className={styles.close_icon} onClick={handleShowNavbar} alt={t('header.alt.close_icon')}/> 
             : <img src={hamburger}  className={styles.open_icon} onClick={handleShowNavbar} alt={t('header.alt.menu_icon')}/>}
@@ -67,4 +67,4 @@ const Header = () => {
   )
 }
 
-export default Header
+export default Navbar

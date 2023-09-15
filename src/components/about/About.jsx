@@ -1,11 +1,13 @@
 import React from 'react'
 import { useTranslation } from 'react-i18next'
 import styles  from './About.module.scss'
+import { DownloadResume } from '../index'
 
 const About = () => {
     
     const { t } = useTranslation();
-
+    const hoverEffect = styles.hithere_hover;
+    
     return  (
         <section id="about" className={styles.about}>
             <h1>
@@ -32,7 +34,8 @@ const About = () => {
                 <p>
                     {t('home.description')}
                 </p>  
-            </div> 
+            </div>
+             <DownloadResume className={hoverEffect}/>
         </section>
     )
 }

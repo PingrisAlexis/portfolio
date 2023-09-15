@@ -24,7 +24,8 @@
     "alt": {
       "logo": "Logo du projet ",
       "host": "Lien de l'hébergement du projet ",
-      "github": "Lien de l'hébergement du code du projet "
+      "github": "Lien de l'hébergement du code du projet ",
+      "stack": "Technologie utilisée: "
     },
     "Kasa": "Intégration",
     "SoPekocko": "Création d'APIs sécurisées",
@@ -52,7 +53,13 @@
   },
   "scroll_to_the_top": {
     "alt": {
-      "icon": "Retourner en début de page"
+      "icon": "Retourner en haut de page"
+    },
+    "title": "Retourner en haut de page"
+  },
+    "resume": {
+      "download": "Pingris_Alexis_Developpeur.pdf",
+      "alt": "Télécharger le CV",
+      "title": "Télécharger le CV"
     }
-  } 
 }

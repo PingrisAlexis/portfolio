@@ -1,14 +1,15 @@
 import { React } from 'react'
-import { Header, About, Skills, Projects, ScrollToTop  } from './components'
+import { Navbar, About, Skills, Projects, Contact, ScrollToTop  } from './components'
 
 const App = () => {
 
   return (
     <div className="App" >
-         <Header />
+         <Navbar />
          <About />
          <Skills />
          <Projects />
+         <Contact />
         <ScrollToTop />
     </div>  
   );

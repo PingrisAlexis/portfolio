@@ -25,7 +25,8 @@
     "alt": {
       "logo": "Logo project ",
       "host": "Project hosting link ",
-      "github": "Project code hosting link "
+      "github": "Project code hosting link ",
+      "stack": "Technology used: "
     },
     "Kasa": "Integration",
     "SoPekocko": "Create Secured APIs",
@@ -53,7 +54,13 @@
   },
   "scroll_to_the_top": {
     "alt": {
-      "icon": "Back to top of page"
-    }
+      "icon": "Scroll to the top"
+    },
+    "title": "Scroll to the top"
+  },
+  "resume": {
+    "download": "Pingris_Alexis_Developer.pdf",
+    "alt": "Download resume",
+    "title": "Download resume"
   }
 }
