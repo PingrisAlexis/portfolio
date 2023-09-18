@@ -5,7 +5,6 @@ import styles  from './About.module.scss'
 const About = () => {
     
     const { t } = useTranslation();
-    const hoverEffect = styles.hithere_hover;
     
     return  (
         <section id="about" className={styles.about}>
