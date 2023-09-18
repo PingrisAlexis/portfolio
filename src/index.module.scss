@@ -1,42 +1,32 @@
 body {
   margin: 0;
   font-family: 'Poppins', sans-serif;
-
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
-  --primary-color: #ff6060;
-  --secondary-color: #f6f6f6;
-  --tertiary-color: #ff6060;
-  color: #555;
-  background-color: #dfe4eaed;
   line-height: 1.5;
-
+  background-color: #f0f0f0;;
 }
+
 .app {
   line-height: 1.5;
   color: var(--clr-fg);
-  // background-color: var(--clr-bg);
-  background: #bdc3c7;
 }
 
-.light {
-  //#f5f6fa;
-  --clr-bg: #fcfcfc;
+.light_theme {
+  --primary-background: #f0f0f0;
   --clr-bg-alt: #fff;
   --clr-fg: #555;
   --clr-fg-alt: #444;
   --clr-primary: #0984e0;
-  --shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
 }
 
-.dark {
+.dark_theme {
   --clr-bg: #23283e;
   --clr-bg-alt: #2a2f4c;
   --clr-fg: #bdbddd;
   --clr-fg-alt: #cdcdff;
   --clr-primary: #90a0d9;
-  --shadow: rgba(0, 0, 0, 0.16) 0px 10px 36px 0px,
-    rgba(0, 0, 0, 0.06) 0px 0px 0px 1px;
+
 }
 
 html {
@@ -88,3 +78,19 @@ p {
  font-size: 1.6rem;
 }
 
+.square {
+  width: 5rem;
+  border: none;
+  border-radius: 12px;
+  background: #ffffff;
+  box-shadow: rgba(0, 0, 0, 0.3) 0px 19px 38px, rgba(0, 0, 0, 0.22) 0px 15px 12px;
+}
+
+.hithere:hover {
+  animation: hithere 1.2s ease infinite;
+}
+
+@keyframes hithere {
+  30% { transform: scale(1.1); }
+  100% { transform: scale(1); }
+}

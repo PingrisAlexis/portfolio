@@ -1,5 +1,6 @@
 import React from 'react'
 import styles  from './Navbar.module.scss'
+import global from '../../index.module.scss'
 import { useTranslation } from 'react-i18next'
 import { LanguageSwitch } from '../index'
 import coding from '../../assets/utils/coding.svg'
@@ -34,8 +35,8 @@ const Navbar = () => {
       <nav className={styles.banner}>
           <img src={coding} className={styles.logo} alt={t('header.alt.logo')}/>
           <div className={styles.menu_icon}>  
-            {showNavbar ? <img src={close} className={styles.close_icon} onClick={handleShowNavbar} alt={t('header.alt.close_icon')}/> 
-            : <img src={hamburger}  className={styles.open_icon} onClick={handleShowNavbar} alt={t('header.alt.menu_icon')}/>}
+            {showNavbar ? <img src={close} className={`${styles.close_icon} ${global.square} ${global.hithere}`} onClick={handleShowNavbar} alt={t('header.alt.close_icon')}/> 
+            : <img src={hamburger} className={`${styles.open_icon} ${global.square} ${global.hithere}`} onClick={handleShowNavbar} alt={t('header.alt.menu_icon')}/>}
           </div>
           <ul
             className={styles.navbar}

@@ -81,5 +81,8 @@
       "linkedin": "Contact me on LinkedIn",
       "github": "View Github profile"
     }
+  },
+  "footer": {
+    "copyright": "Copyright - 2023, PINGRIS Alexis"
   }
 }

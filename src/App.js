@@ -1,16 +1,17 @@
 import { React } from 'react'
-import { Navbar, About, Skills, Projects, Contact, ScrollToTop  } from './components'
+import { Navbar, About, Skills, Projects, Contact, ScrollToTop, Footer  } from './components'
 
 const App = () => {
 
   return (
     <div className="App" >
-         <Navbar />
-         <About />
-         <Skills />
-         <Projects />
-         <Contact />
-        <ScrollToTop />
+      <Navbar />
+      <About />
+      <Skills />
+      <Projects />
+      <Contact />
+      <ScrollToTop />
+      <Footer />
     </div>  
   );
 }

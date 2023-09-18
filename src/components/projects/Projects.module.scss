@@ -17,13 +17,10 @@
         margin: auto;
         padding: 1rem;
         margin: 2rem;
-        border-radius: 50px;
         height: 31rem;
         width: 30rem;
         display: flex;
         flex-flow: column wrap;
-        background: #f5f6fa;
-        box-shadow: rgba(0, 0, 0, 0.3) 0px 19px 38px, rgba(0, 0, 0, 0.22) 0px 15px 12px;
         align-items: center;
         justify-content: space-around;
         &:hover {
@@ -63,9 +60,6 @@
             margin-top: 0.4rem;
             .icon_image {
                 width: 5rem;
-                box-shadow: rgba(0, 0, 0, 0.3) 0px 19px 38px, rgba(0, 0, 0, 0.22) 0px 15px 12px;
-                background: transparent;
-                border-radius: 12px;
             }
             li{
                 border-radius: 20px;

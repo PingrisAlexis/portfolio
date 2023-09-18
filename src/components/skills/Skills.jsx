@@ -1,6 +1,6 @@
 import React from 'react'
 import styles  from './Skills.module.scss'
-import commonStyles  from '../../index.module.scss'
+import global  from '../../index.module.scss'
 import { SKILLS_DATA } from '../../portfolio.js'
 import { useTranslation } from 'react-i18next'
 
@@ -13,9 +13,9 @@ const Skills = () => {
             <h2>
                 {t('header.skills')}
             </h2>
-            <ul>
+            <ul className={global.square}>
                 {SKILLS_DATA.map((skill, index) => (
-                <li key={index} className={commonStyles.glow_on_hover}>
+                <li key={index} className={global.square}>
                     <img src={skill.src} alt={t('skills.alt.icon') + skill.name} title={skill.name}/>
                 </li>
             ))}

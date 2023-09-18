@@ -1,5 +1,6 @@
 import React from 'react'
 import styles  from './Projects.module.scss'
+import global from '../../index.module.scss'
 import { useTranslation } from 'react-i18next'
 import { PROJECTS_DATA } from '../../portfolio.js'
 import netlify from '../../assets/utils/netlify.svg'
@@ -16,7 +17,7 @@ const Projects = () => {
             </h2>
             <ul className={styles.cards_container}>
                 {PROJECTS_DATA.map((project, index) => (
-                <li key={index} className={styles.card}>
+                <li key={index} className={`${styles.card} ${global.square}`}>
                     <div className={styles.project_image}>
                         <img src={project.src} alt={t('projects.alt.logo') + project.alt}/>
                     </div>

@@ -1,13 +1,14 @@
 import React from 'react'
-import { useTranslation } from 'react-i18next'
 import styles  from './About.module.scss'
+import global from '../../index.module.scss'
+import { useTranslation } from 'react-i18next'
 
 const About = () => {
     
     const { t } = useTranslation();
     
     return  (
-        <section id="about" className={styles.about}>
+        <section id="about" className={`${styles.about} ${global.square}`}>
             <h1>
                 {t('home.presentation')}
             </h1>
