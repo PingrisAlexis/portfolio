@@ -10,7 +10,7 @@ const Navbar = () => {
 
   const [showNavbar, setShowNavbar] = React.useState(false);
   const [width, setWidth] = React.useState(window.innerWidth);
-  const breakpoint = 600;
+  const breakpoint = 750;
 
   const { t } = useTranslation();
 

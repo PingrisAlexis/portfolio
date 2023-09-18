@@ -1,10 +1,10 @@
 {
   "header": {
-    "home": "Home",
-    "skills": "Skills",
-    "projects": "Projects",
+    "home": "<Home />",
+    "skills": "<Skills />",
+    "projects": "<Projects />",
     "resume": "Resume",
-    "contact": "Contact",
+    "contact": "<Contact />",
     "alt": {
       "logo": "Portfolio logo",
       "close_icon" : "Close menu icon",
@@ -13,7 +13,7 @@
   },
   "home": {
     "blank": " ",
-    "presentation": "Welcome to my portfolio,",
+    "presentation": "Welcome to my <Portfolio />",
     "iam": "I am",
     "name": "Alexis PINGRIS",
     "," :",",
@@ -22,6 +22,10 @@
     "description": "with a passion for clean code and problem-solving. I thrive on continuous learning and collaborate effectively to create innovative  and optimised solutions."
   },
   "projects": {
+    "title": {
+      "github": "Code base",
+      "netlify": "Website"
+    },
     "alt": {
       "logo": "Logo project ",
       "host": "Project hosting link ",
@@ -43,8 +47,10 @@
   },
   "language_switch": {
     "alt": {
-      "french_flag": "French language mode",
-      "usa_flag" : "English language mode"
+      "french_flag": "Switch to French version"
+    },
+    "title": {
+      "french_flag": "French version"
     }
   },
   "skills": {
@@ -62,5 +68,18 @@
     "download": "Pingris_Alexis_Developer.pdf",
     "alt": "Download resume",
     "title": "Download resume"
+  },
+  "contact": {
+    "contact": "Get in touch",
+    "email": "pingrisalexis@gmail.com",
+    "url": {
+      "linkedin": "https://www.linkedin.com/in/pingrisalexis/",
+      "github": "https://github.com/PingrisAlexis"
+    },
+    "alt": {
+      "gmail": "Contact by mail",
+      "linkedin": "Contact me on LinkedIn",
+      "github": "View Github profile"
+    }
   }
 }

@@ -35,12 +35,12 @@ const Projects = () => {
                             {project.isHost ? 
                             <li className={styles.hithere}>
                                 <a href={project.url} target="_blank" rel="noreferrer">
-                                    <img src={netlify} className={styles.icon_image} alt={t('projects.alt.host') + project.name} title={project.url} />
+                                    <img src={netlify} className={styles.icon_image} alt={t('projects.alt.host') + project.name} title={t('projects.title.netlify')} />
                                 </a>
                             </li> : ''} 
                             <li className={styles.hithere}>
                                 <a href={project.github} target="_blank" rel="noreferrer">
-                                    <img src={github} className={styles.icon_image} title={project.github} alt={t('projects.alt.github') + project.name}/>
+                                    <img src={github} className={styles.icon_image} alt={t('projects.alt.github') + project.name} title={t('projects.title.github')}/>
                                 </a>        
                             </li>
                         </ul>

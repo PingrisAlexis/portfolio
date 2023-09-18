@@ -33,7 +33,9 @@ const ScrollToTop = () => {
 
   return (
     isVisible && (
-    <img src={top} className={styles.scroll_to_top_button} onClick={scrollToTop} alt={t('scroll_to_the_top.alt.icon')} title={t('scroll_to_the_top.title')}/>
+      <div>
+        <img src={top} className={styles.scroll_to_top_button} onClick={scrollToTop} alt={t('scroll_to_the_top.alt.icon')} title={t('scroll_to_the_top.title')}/>
+      </div>
     )
   );
 };

@@ -12,9 +12,6 @@ body {
   line-height: 1.5;
 
 }
-// svg {
-//   filter: drop-shadow(3px 5px 2px rgb(0 0 0 / 0.4));
-// }
 .app {
   line-height: 1.5;
   color: var(--clr-fg);
@@ -71,16 +68,12 @@ h1 {
 
 h2 {
   font-size: 3rem;
-  // text-shadow: 2px 7px 5px rgba(0,0,0,0.3), 
-  // 0px -4px 10px rgba(255,255,255,0.3);
 }
 
 h3 {
   font-size: 1.8rem;
   position: relative;
   bottom: 0.4rem;
-  // text-shadow: 2px 7px 5px rgba(0,0,0,0.3), 
-  // 0px -4px 10px rgba(255,255,255,0.3);
 }
 
 h4 {

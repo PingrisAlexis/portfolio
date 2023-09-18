@@ -1,8 +1,10 @@
 .skills {
-    width: 50vw; 
+    width: 30vw; 
     margin: auto;
     margin-bottom: 20rem;
-    
+    @media (max-width: 1000px) {
+        width: 50vw;
+        }
     @media (max-width: 600px) {
         width: 80vw;
         }

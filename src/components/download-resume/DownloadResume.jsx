@@ -10,9 +10,14 @@ const DownloadResume = ({ className}) => {
     const resumePath = process.env.PUBLIC_URL + t('resume.download'); 
     
   return (
-    <a  href={resumePath} download={t('resume.download')} className={styles.download_resume_button}>
-      <img className={className} src={download} title={t('resume.title')} alt={t('resume.alt')}/>
-    </a>
+    <div className={styles.download_resume}>
+      <h3>
+          {t('resume.title')}
+      </h3>
+      <a  href={resumePath} download={t('resume.download')}>
+        <img className={className} src={download} title={t('resume.title')} alt={t('resume.alt')}/>
+      </a>
+    </div>  
   );
 };
 
