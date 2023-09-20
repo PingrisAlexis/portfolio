@@ -11,7 +11,7 @@ const Skills = () => {
     return  (
         <section id="skills" className={styles.skills}>
             <h2>
-                {t('header.skills')}
+                {t('skills.section')}
             </h2>
             <ul className={global.square}>
                 {SKILLS_DATA.map((skill, index) => (

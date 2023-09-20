@@ -14,7 +14,7 @@ const Contact = () => {
   return (
     <section id="contact" className={styles.contact}>
         <h2>  
-          {t('header.contact')}
+          {t('contact.section')}
         </h2>
         <div className={`${styles.container} ${global.square}`}>
           <h3>

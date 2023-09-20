@@ -79,7 +79,6 @@ p {
 }
 
 .square {
-  width: 5rem;
   border: none;
   border-radius: 12px;
   background: #ffffff;
@@ -87,7 +86,7 @@ p {
 }
 
 .hithere:hover {
-  animation: hithere 1.2s ease infinite;
+  animation: hithere 1.6s ease infinite;
 }
 
 @keyframes hithere {

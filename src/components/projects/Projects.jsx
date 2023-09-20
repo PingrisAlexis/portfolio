@@ -13,7 +13,7 @@ const Projects = () => {
     return  (
         <section id="projects" className={styles.projects}>
             <h2>
-                {t('header.projects')}
+                {t('projects.section')}
             </h2>
             <ul className={styles.cards_container}>
                 {PROJECTS_DATA.map((project, index) => (
@@ -28,20 +28,20 @@ const Projects = () => {
                         <ul className={styles.icon_container}>
                             {project.stacks.map((stack, index) => (
                             <li key={index} className={styles.icon_skill}>
-                                <img key={index} src={stack.src} className={styles.icon_image} alt={t('projects.alt.stack') + stack.name} title={stack.name}/>
+                                <img key={index} src={stack.src} className={`${styles.icon_image} ${global.square}`} alt={t('projects.alt.stack') + stack.name} title={stack.name}/>
                             </li>
                             ))}
                         </ul>
                         <ul className={`${styles.icon_container} ${styles.link_container}`}>
                             {project.isHost ? 
-                            <li className={styles.hithere}>
+                            <li>
                                 <a href={project.url} target="_blank" rel="noreferrer">
-                                    <img src={netlify} className={styles.icon_image} alt={t('projects.alt.host') + project.name} title={t('projects.title.netlify')} />
+                                    <img src={netlify} className={`${styles.icon_image} ${global.square} ${styles.hithere}`} alt={t('projects.alt.host') + project.name} title={t('projects.title.netlify')} />
                                 </a>
                             </li> : ''} 
-                            <li className={styles.hithere}>
+                            <li>
                                 <a href={project.github} target="_blank" rel="noreferrer">
-                                    <img src={github} className={styles.icon_image} alt={t('projects.alt.github') + project.name} title={t('projects.title.github')}/>
+                                    <img src={github} className={`${styles.icon_image} ${global.square} ${styles.hithere}`} alt={t('projects.alt.github') + project.name} title={t('projects.title.github')}/>
                                 </a>        
                             </li>
                         </ul>

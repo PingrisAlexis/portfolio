@@ -12,18 +12,21 @@ const About = () => {
             <h1>
                 {t('home.presentation')}
             </h1>
-            <div>
+            {/* <div> */}
+                {/* <p>
+                    {t('home.iam')}&nbsp;
+                </p> */}
+                {/* <p className={styles.important_text}>
+                    {t('home.name')}
+                </p> */}
+                {/* <p>
+                    {t('home.,')}&nbsp;
+                </p>   */}
+            {/* </div>   */}
+            <div className={styles.description}>
                 <p>
                     {t('home.iam')}&nbsp;
-                </p>
-                <p className={styles.important_text}>
-                    {t('home.name')}
-                </p>
-                <p>
-                    {t('home.,')}&nbsp;
                 </p>  
-            </div>  
-            <div className={styles.description}>
                 <p>
                     {t('home.a')}&nbsp;
                 </p>    

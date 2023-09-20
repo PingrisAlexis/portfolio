@@ -31,21 +31,25 @@
     li {
       display: flex;
       align-items: center;
+      justify-content: space-between;
+      padding: 1.3rem;
+
     }
     .nav_link {  
-      margin-right: 2rem;
-      font-size: 2.4rem;
+      font-size: 1.6rem;
       background: transparent;
+      
+      font-weight: bold;
+      text-decoration: none;
+      position: relative;
       @media (max-width: 750px) {
         margin-right: 0;
         margin-bottom: 2rem;
         }      
       @media (max-width: 750px) {
-        font-size: 3rem;
-        margin-right: unset;
-        margin-top: 2rem;
+        font-size: 2rem;
         }
-      }      
+      }  
     .open_icon,
     .close_icon {
       cursor: pointer;
@@ -64,4 +68,41 @@
       cursor: pointer;
       z-index: 3;
     }     
+  }
+
+  .hover_effect {
+    position: relative;
+    display: inline-block;
+    text-decoration: none;
+  
+    &::before,
+    &::after {
+      content: "";
+      position: absolute;
+      opacity: 0;
+      transition: opacity 0.3s ease-in-out;
+    }
+  
+    &::before {
+      content: "< ";
+      left: -10px;
+      @media (max-width: 750px) {
+        left: -12px;
+      }
+    }
+  
+    &::after {
+      content: " />";
+      right: -14px;
+      @media (max-width: 750px) {
+        right: -17px;
+      }
+    }
+  
+    &:hover {
+      &::before,
+      &::after {
+        opacity: 1;
+      }
+    }
   }

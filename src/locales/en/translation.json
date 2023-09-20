@@ -1,10 +1,8 @@
 {
   "header": {
-    "home": "<Home />",
-    "skills": "<Skills />",
-    "projects": "<Projects />",
-    "resume": "Resume",
-    "contact": "<Contact />",
+    "skills": "SKILLS",
+    "projects": "PROJECTS",
+    "contact": "CONTACT",
     "alt": {
       "logo": "Portfolio logo",
       "close_icon" : "Close menu icon",
@@ -13,15 +11,16 @@
   },
   "home": {
     "blank": " ",
-    "presentation": "Welcome to my <Portfolio />",
+    "presentation": "Welcome to my portfolio",
     "iam": "I am",
     "name": "Alexis PINGRIS",
     "," :",",
-    "a": "A",
+    "a": "a",
     "job": "Web Developer",
     "description": "with a passion for clean code and problem-solving. I thrive on continuous learning and collaborate effectively to create innovative  and optimised solutions."
   },
   "projects": {
+    "section": "<PROJECTS />",
     "title": {
       "github": "Code base",
       "netlify": "Website"
@@ -54,6 +53,7 @@
     }
   },
   "skills": {
+    "section": "<SKILLS />",
     "alt": {
       "icon": "Expertise in "
     }
@@ -70,6 +70,7 @@
     "title": "Download resume"
   },
   "contact": {
+    "section": "<CONTACT />",
     "contact": "Get in touch",
     "email": "pingrisalexis@gmail.com",
     "url": {
