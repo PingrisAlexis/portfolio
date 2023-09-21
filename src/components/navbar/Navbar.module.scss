@@ -53,9 +53,14 @@
         font-size: 2rem;
         }
       }  
+      .close_icon {
+        position: fixed;
+      }
+      .open_icon {
+        position: absolute;
+      }
     .close_icon,
     .open_icon {
-      position: absolute;
       top: 1.5rem;
       right: 2.8rem;
       padding: 0.5rem;
