@@ -1,8 +1,8 @@
 {
   "header": {
-    "skills": "SKILLS",
-    "projects": "PROJECTS",
-    "contact": "CONTACT",
+    "skills": "<SKILLS />",
+    "projects": "<PROJECTS />",
+    "contact": "<CONTACT />",
     "alt": {
       "logo": "Portfolio logo",
       "close_icon" : "Close menu icon",
