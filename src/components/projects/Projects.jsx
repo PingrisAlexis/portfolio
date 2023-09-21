@@ -12,7 +12,7 @@ const Projects = () => {
 
     return  (
         <section id="projects" className={styles.projects}>
-            <h2>
+            <h2 className={global.square}>
                 {t('projects.section')}
             </h2>
             <ul className={styles.cards_container}>

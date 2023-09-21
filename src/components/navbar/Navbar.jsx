@@ -45,17 +45,17 @@ const Navbar = () => {
                 showNavbar || (!showNavbar && width > breakpoint) ? 'flex' : 'none'
             }}>
           <li>
-            <a href="#skills" className={`${styles.nav_link} ${styles.hover_effect}`}>
+            <a href="#skills" className={`${styles.nav_link} ${styles.tag_effect}`}>
               {t('header.skills')}&nbsp;
             </a>                    
           </li>
           <li>
-            <a href="#projects" className={`${styles.nav_link} ${styles.hover_effect}`}>
+            <a href="#projects" className={`${styles.nav_link} ${styles.tag_effect}`}>
               {t('header.projects')}&nbsp;
             </a>
           </li>
           <li>
-            <a href="#contact" className={`${styles.nav_link} ${styles.hover_effect}`}>
+            <a href="#contact" className={`${styles.nav_link} ${styles.tag_effect}`}>
               {t('header.contact')}&nbsp;
             </a>
           </li>

@@ -26,6 +26,11 @@
       width: 100%;
       height: 100%;
       z-index: 2;
+      background-image: url('../../assets/light_theme_background.jpg');
+      background-size: cover;
+      background-repeat: no-repeat;
+      background-attachment: fixed;
+      background-position: center;
       }     
     }
     li {
@@ -37,8 +42,6 @@
     }
     .nav_link {  
       font-size: 1.9rem;
-      background: transparent;
-      
       font-weight: bold;
       text-decoration: none;
       position: relative;
@@ -50,35 +53,28 @@
         font-size: 2rem;
         }
       }  
-    .open_icon,
-    .close_icon {
-      cursor: pointer;
-        display: none !important;
-        @media (max-width: 750px) {
-          display: block !important;
-      }
-    }
     .close_icon,
     .open_icon {
-      position: fixed;
+      position: absolute;
       top: 1.5rem;
       right: 2.8rem;
       padding: 0.5rem;
       width: 5rem;
       cursor: pointer;
       z-index: 3;
+      display: none !important;
+      @media (max-width: 750px) {
+        display: block !important;
+    }
     }     
   }
-
-  .hover_effect {
+  .tag_effect {
     position: relative;
     display: inline-block;
-    text-decoration: none;
-  
+    text-decoration: none;  
     &::before,
     &::after {
       font-size: 25px;
-      // top: -4px;
       content: "";
       position: absolute;
       opacity: 0;

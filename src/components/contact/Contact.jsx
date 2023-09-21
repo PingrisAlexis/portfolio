@@ -13,7 +13,7 @@ const Contact = () => {
 
   return (
     <section id="contact" className={styles.contact}>
-        <h2>  
+        <h2 className={global.square}>  
           {t('contact.section')}
         </h2>
         <div className={`${styles.container} ${global.square}`}>
