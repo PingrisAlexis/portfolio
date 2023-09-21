@@ -17,7 +17,7 @@
   }
   .navbar {  
     justify-content: space-around;
-    @media (max-width: 850px) {
+    @media (max-width: 750px) {
       flex-direction: column;
       justify-content: center;
       align-items: center;
@@ -36,27 +36,22 @@
     li {
       display: flex;
       align-items: center;
-      justify-content: center;
-      margin: 1rem;
+      justify-self: center;
       cursor: pointer;
+      margin: 1rem;
+      text-align: center;
       a {
+        padding: 0.5rem;
         background: transparent;
+        font-size: 16px;
+        font-weight: bold;     
+        @media (max-width: 750px) {
+          font-size: 1.8rem;
+          padding: 1rem;
+          }
       }
     }
-    .nav_link {  
-      font-size: 2rem;
-      font-weight: bold;
-      text-decoration: none;
-      position: relative;
-      padding: 0.5rem;
 
-      @media (max-width: 850px) {
-        margin-right: 0;
-        }      
-      @media (max-width: 850px) {
-        font-size: 2rem;
-        }
-      }  
       .close_icon {
         position: fixed;
       }
@@ -72,43 +67,8 @@
       cursor: pointer;
       z-index: 3;
       display: none !important;
-      @media (max-width: 850px) {
+      @media (max-width: 750px) {
         display: block !important;
     }
     }     
-  }
-  .tag_effect {
-    position: relative;
-    display: inline-block;
-    text-decoration: none;  
-    &::before,
-    &::after {
-      font-size: 25px;
-      content: "";
-      position: absolute;
-      opacity: 0;
-      transition: opacity 0.3s ease-in-out;
-    } 
-    &::before {
-      top: -4px;
-      content: "< ";
-      left: -15px;
-      @media (max-width: 850px) {
-        left: -17px;
-      }
-    }
-    &::after {
-      top: -5px;
-      content: " />";
-      right: -19px;
-      @media (max-width: 850px) {
-        right: -21px;
-      }
-    }
-    &:hover {
-      &::before,
-      &::after {
-        opacity: 1;
-      }
-    }
   }

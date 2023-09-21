@@ -22,14 +22,14 @@
       display: flex;
       flex-direction: row;
       p {
-        font-size: 2.5rem !important;
+        font-size: 2rem !important;
         @media (max-width: 600px) {
-          font-size: 2rem !important;
+          font-size: 1.8rem !important;
         }
       }
     }
     .important_text {
-      color: #2978b5;
+      color: #09808c;
       font-weight: 800;
     }
     .description {
