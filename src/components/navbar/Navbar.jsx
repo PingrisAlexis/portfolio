@@ -44,18 +44,18 @@ const Navbar = () => {
               display:
                 showNavbar || (!showNavbar && width > breakpoint) ? 'flex' : 'none'
             }}>
-          <li className={`${global.square} ${global.hithere}`  }>
-            <a href="#skills">
+          <li className={`${global.hithere}`}  >
+            <a href="#skills" className={`${global.square} `}>
               {t('header.skills')}
             </a>                    
           </li>
-          <li className={`${global.square} ${global.hithere}`  }>
-            <a href="#projects">
+          <li  className={`${global.hithere}`} >
+            <a href="#projects" className={`${global.square}`}>
               {t('header.projects')}
             </a>
           </li>
-          <li className={`${global.square} ${global.hithere}`  }>
-            <a href="#contact">
+          <li  className={`${global.hithere}`} >
+            <a href="#contact" className={`${global.square}`}>
               {t('header.contact')}
             </a>
           </li>

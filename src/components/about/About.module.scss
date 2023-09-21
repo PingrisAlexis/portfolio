@@ -4,12 +4,14 @@
   justify-content: space-around;
   align-items: center;
   text-align: center;
-  width: 60vw;
-  height: 33rem;
+  width: 40vw;
   margin: auto;
-  padding: 1.5rem;
+  padding: 2rem;
   margin-bottom: 20rem;
   margin-top: 20vh;
+  h1 {
+    padding: 2rem;
+  }
     @media (max-width: 1000px) {
       width: 90vw !important;
     }  
