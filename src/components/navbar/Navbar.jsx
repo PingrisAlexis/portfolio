@@ -11,7 +11,7 @@ const Navbar = () => {
 
   const [showNavbar, setShowNavbar] = React.useState(false);
   const [width, setWidth] = React.useState(window.innerWidth);
-  const breakpoint = 750;
+  const breakpoint = 780;
 
   const { t } = useTranslation();
 
@@ -44,18 +44,24 @@ const Navbar = () => {
               display:
                 showNavbar || (!showNavbar && width > breakpoint) ? 'flex' : 'none'
             }}>
-          <li className={`${global.hithere}`}  >
-            <a href="#skills" className={`${global.square} `}>
+          <li className={`${global.hithere}`}>
+            <a href="#skills" className={`${global.square}`} onClick={
+                showNavbar ? handleShowNavbar : ''
+            }>
               {t('header.skills')}
             </a>                    
           </li>
-          <li  className={`${global.hithere}`} >
-            <a href="#projects" className={`${global.square}`}>
+          <li  className={`${global.hithere}`}>
+            <a href="#projects" className={`${global.square}`} onClick={
+                showNavbar ? handleShowNavbar : ''
+            }>
               {t('header.projects')}
             </a>
           </li>
-          <li  className={`${global.hithere}`} >
-            <a href="#contact" className={`${global.square}`}>
+          <li  className={`${global.hithere}`}>
+            <a href="#contact" className={`${global.square}`} onClick={
+                showNavbar ? handleShowNavbar : ''
+            }>
               {t('header.contact')}
             </a>
           </li>

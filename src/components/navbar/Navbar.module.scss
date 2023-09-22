@@ -17,7 +17,7 @@
   }
   .navbar {  
     justify-content: space-around;
-    @media (max-width: 750px) {
+    @media (max-width: 780px) {
       flex-direction: column;
       justify-content: center;
       align-items: center;
@@ -53,7 +53,7 @@
           30% { transform: scale(1.05); }
           100% { transform: scale(1); }
         }
-        @media (max-width: 750px) {
+        @media (max-width: 780px) {
           font-size: 1.8rem;
           padding: 1rem;
         }
@@ -75,7 +75,7 @@
       cursor: pointer;
       z-index: 3;
       display: none !important;
-      @media (max-width: 750px) {
+      @media (max-width: 780px) {
         display: block !important;
     }
     }     
