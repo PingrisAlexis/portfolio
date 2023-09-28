@@ -6,7 +6,7 @@ import styles  from './Projects.module.scss'
 import global from '../../index.module.scss'
 import website from '../../assets/utils/website.svg'
 import github from '../../assets/utils/github.svg'
-import download from '../../assets/utils/download.svg'
+
 const Projects = () => {
 
     const { t } = useTranslation();
