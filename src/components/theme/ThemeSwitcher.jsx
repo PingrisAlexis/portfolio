@@ -11,7 +11,6 @@ const ThemeSwitcher = () => {
     const handleClick = () => {
         if (typeof toggleTheme === 'function') {
           toggleTheme();
-          console.log("coucou")
         }
       };
     return  theme === 'light' ? <ReactSVG className={`${styles.theme_switcher} ${global.square} ${global.hithere}`} src={moon} onClick={handleClick}/> 
