@@ -5,7 +5,6 @@ import { useTranslation } from 'react-i18next'
 import light_gmail from '../../assets/utils/light_gmail.svg'
 import linkedin from '../../assets/utils/linkedin.svg'
 import github from '../../assets/utils/github.svg'
-import { DownloadResume } from '../index'
 
 const Contact = () => {
 
@@ -17,9 +16,6 @@ const Contact = () => {
           {t('contact.section')}
         </h2>
         <div className={`${styles.container} ${global.square}`}>
-          <h3>
-          {t('contact.contact')}
-        </h3>
         <ul className={styles.items}>
           <li>
           <a href={`mailto:${t('contact.email')}`}>
@@ -37,7 +33,6 @@ const Contact = () => {
             </a>         
           </li>
         </ul>
-        <DownloadResume />
         </div>  
     </section>
   )

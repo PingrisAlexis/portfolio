@@ -6,13 +6,19 @@ import reportWebVitals from './reportWebVitals';
 import { I18nextProvider } from 'react-i18next';
 import i18n from './i18n.config';
 import './index.module.scss';
+import {ThemeProvider} from './components/index';
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
+
 root.render(
   <React.StrictMode>
       <BrowserRouter>
         <I18nextProvider i18n={i18n}>
+      <ThemeProvider>
+
             <App />
+      </ThemeProvider>
+
         </I18nextProvider>
     </BrowserRouter>
   </React.StrictMode>

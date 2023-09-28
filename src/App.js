@@ -1,5 +1,5 @@
 import { React } from 'react'
-import { Navbar, About, Skills, Projects, Contact, ScrollToTop, Footer  } from './components'
+import { Navbar, About, Skills, Projects, Contact, DownloadResume, ScrollToTop, Footer } from './components'
 
 const App = () => {
 
@@ -10,6 +10,7 @@ const App = () => {
       <Skills />
       <Projects />
       <Contact />
+      <DownloadResume />
       <ScrollToTop />
       <Footer />
     </div>  

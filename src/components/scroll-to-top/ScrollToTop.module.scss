@@ -2,8 +2,14 @@
   position: fixed;
   bottom: 2.8rem;
   right: 2.8rem;
-  padding: 0.5rem;
   cursor: pointer;
-  width: 5rem;
   z-index: 1;
+  height: 5rem  !important;
+  width: 5rem !important;
+  div {
+    background-color: transparent;
+    svg {
+      padding: 0.5rem;
+    }
+  }
 }

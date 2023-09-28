@@ -22,7 +22,7 @@
     "section": "<PROJETS />",
     "title": {
       "github": "Base de code",
-      "netlify": "Site web"
+      "website": "Site web"
     },
     "alt": {
       "logo": "Logo du projet ",
@@ -43,7 +43,7 @@
     "gameon" : "Landing page",
     "la_chouette_agence": "Optimisation et référencement"
   },
-  "language_switch": {
+  "language_switcher": {
     "alt": {
       "usa_flag" : "Changer pour version anglaise"
     },
@@ -65,8 +65,8 @@
   },
     "resume": {
       "download": "Pingris_Alexis_qc_Developpeur.pdf",
-      "alt": "Télécharger le CV",
-      "title": "Mon CV"
+      "alt": "Télécharger",
+      "title": "<CURICULUM VITAE />"
     },
     "contact": {
       "section": "<CONTACT />",

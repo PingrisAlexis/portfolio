@@ -1,9 +1,8 @@
 .footer_container {
-    background: #000b13;
+    background: var(--background-color-footer);
     height: 7rem;
     display: flex;
     justify-content: center;
     align-items: center;
-    color: #f0f0f0;
-    // z-index: 77;
+    color: #ecf0f1;
 }

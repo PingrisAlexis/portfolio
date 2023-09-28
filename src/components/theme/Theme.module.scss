@@ -1,0 +1,30 @@
+.dark {
+    --color:#ecf0f1;
+    --color-sec: #FFDD55;    
+    --background-image: url('../../assets/dark_theme.png');
+    --background-color-primary: #737373;
+    --background-color-footer: #111111;
+    --border-radius: 12px;
+  }
+
+  .light {
+    --color: #111111;
+    --color-sec: #629576; 
+    --background-image: url('../../assets/light_theme.png');
+    --background-color-primary: #ecf0f1;
+    --background-color-footer: #00250F;    
+    --border-radius: 12px;
+  }
+  
+ .theme_switcher {
+    width: 5rem;
+    border-radius: var(--border-radius);
+    div {
+      width: 5rem;
+      height: 5rem;
+      background-color: transparent;
+      svg {
+        padding: 0.5rem;
+    }
+  } 
+} 

@@ -1,9 +1,34 @@
 .download_resume {
-    margin-top: 1.5rem;
-    a {
-        img {
-            padding: 0.5rem;
+    margin: auto;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    // justify-content: space-around;
+    align-items: center;
+    // padding-bottom: 4rem;
+    margin: 2rem;
+    .container {
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+        flex-direction: column;
+        margin-top: 2rem;
+        width: 25rem;
+        height: 15rem;
+        padding: 2.5rem;
+        a {
+            div {
+                div {
+                    width: 5rem;
+                    height: 5rem;
+                    background-color: transparent;
+                    svg {
+                        padding: 0.5rem;
+                    }
+                } 
+            }  
         }
     }
+
 }
 

@@ -23,7 +23,7 @@
     "section": "<PROJECTS />",
     "title": {
       "github": "Code base",
-      "netlify": "Website"
+      "website": "Website"
     },
     "alt": {
       "logo": "Logo project ",
@@ -44,7 +44,7 @@
     "gameon" : "Landing page",
     "la_chouette_agence": "Optimisation and SEO"
   },
-  "language_switch": {
+  "language_switcher": {
     "alt": {
       "french_flag": "Switch to French version"
     },
@@ -66,8 +66,8 @@
   },
   "resume": {
     "download": "Pingris_Alexis_en_Developer.pdf",
-    "alt": "Download resume",
-    "title": "My resume"
+    "alt": "Download",
+    "title": "<RESUME />"
   },
   "contact": {
     "section": "<CONTACT />",

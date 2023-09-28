@@ -13,12 +13,6 @@ const About = () => {
                 {t('home.presentation')}
             </h1>
             <div className={styles.description}>
-                <p>
-                    {t('home.iam')}&nbsp;
-                </p>  
-                <p>
-                    {t('home.a')}&nbsp;
-                </p>    
                 <p className={styles.important_text}>
                     {t('home.job')}&nbsp;
                 </p>    

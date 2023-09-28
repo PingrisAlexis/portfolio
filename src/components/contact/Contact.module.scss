@@ -3,36 +3,34 @@
   text-align: center;
   .container {
     display: flex;
-    flex-direction: column;
     justify-content: space-around;
     align-items: center;
     text-align: center;
-    width: 35vw;
+    width: 40rem;
     margin: auto;
     margin-top: 20px;
     padding: 1.5rem;
     margin-bottom: 20rem;
-    @media (max-width: 1000px) {
-      width: 70vw;
-      }
-    @media (max-width: 700px) {
-      width: 90vw !important;
-      }
-      @media (max-width: 450px) {
-        width: 30rem !important;
+      @media (max-width: 400px) {
+        width: 90vw !important;
         }
   .items {
     width: 100%;
     display: flex;
-    flex-wrap: wrap;
+    flex-wrap: nowrap;
     justify-content: center;
     @media (max-width: 450px) {
      flex-direction: column;
      }
   }
+
   .mail {
     padding: 0.5rem;
     height: 5rem;
+    background-color: white !important;
+    }
+    a {
+      background: transparent;
     }
   img {
     bottom: 2.8rem;

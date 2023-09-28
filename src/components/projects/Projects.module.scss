@@ -30,6 +30,7 @@
             }
         }
         .project_description {
+            
             display: flex;
             text-align: center;
             flex-direction: column;
@@ -40,13 +41,16 @@
             }
         }
         .project_image {
+            
             display: flex;
             flex: 0.8;
             align-items: center;
-            width: 60%;
-            background: transparent;
+            justify-content: center;
+            width: 95%;
+            background: #ecf0f1;
+            border-radius: var(--border-radius);
             img {
-                width: 100%;
+                width: 60%;
                 max-height: 100%;
             }         
         }
@@ -55,11 +59,23 @@
             justify-content: center;
             background: transparent;
             margin-top: 0.4rem;
+            a {
+                div {
+                    div {
+                        width: 5rem;
+                        height: 5rem;
+                        background-color: transparent;
+                        svg {
+                            padding: 0.5rem;
+                        }
+                    } 
+                }  
+            }
             .icon_image {
                 width: 5rem;
             }
             li{
-                border-radius: 12px;
+                border-radius: var(--border-radius);
                 margin: 0.5rem;
                 }
             }        

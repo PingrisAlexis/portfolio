@@ -1,11 +1,12 @@
 import React from 'react'
+import { useTranslation } from 'react-i18next'
+import { ReactSVG } from 'react-svg'
+import { PROJECTS_DATA } from '../../portfolio.js'
 import styles  from './Projects.module.scss'
 import global from '../../index.module.scss'
-import { useTranslation } from 'react-i18next'
-import { PROJECTS_DATA } from '../../portfolio.js'
-import netlify from '../../assets/utils/netlify.svg'
+import website from '../../assets/utils/website.svg'
 import github from '../../assets/utils/github.svg'
-
+import download from '../../assets/utils/download.svg'
 const Projects = () => {
 
     const { t } = useTranslation();
@@ -36,7 +37,7 @@ const Projects = () => {
                             {project.isHost ? 
                             <li>
                                 <a href={project.url} target="_blank" rel="noreferrer">
-                                    <img src={netlify} className={`${styles.icon_image} ${global.square} ${styles.hithere}`} alt={t('projects.alt.host') + project.name} title={t('projects.title.netlify')} />
+                                    <ReactSVG src={website} className={`${styles.icon_image} ${global.square} ${styles.hithere}  ${styles.website}`} alt={t('projects.alt.host') + project.name} title={t('projects.title.website')} />
                                 </a>
                             </li> : ''} 
                             <li>
