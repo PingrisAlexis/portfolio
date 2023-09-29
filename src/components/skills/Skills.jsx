@@ -10,7 +10,7 @@ const Skills = () => {
 
     return  (
         <section id="skills" className={styles.skills}>
-            <h2 className={global.square}>
+            <h2>
                 {t('skills.section')}
             </h2>
             <ul className={global.square}>

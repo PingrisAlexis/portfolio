@@ -13,7 +13,7 @@ const DownloadResume = () => {
     
   return (
     <section className={styles.download_resume}>
-       <h2 className={global.square}> 
+       <h2> 
           {t('resume.title')}
       </h2>
       <div className={`${styles.container} ${global.square}`}>

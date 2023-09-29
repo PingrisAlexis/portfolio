@@ -12,7 +12,7 @@ const Navbar = () => {
 
   const [showNavbar, setShowNavbar] = React.useState(false);
   const [width, setWidth] = React.useState(window.innerWidth);
-  const breakpoint = 900;
+  const breakpoint = 980;
 
   const { t } = useTranslation();
 
@@ -32,49 +32,52 @@ const Navbar = () => {
   };
 
   return (
-    <header className={styles.header}>
+    <header className={styles.header}>     
       <nav className={styles.banner}>
-          <ReactSVG src={coding} className={styles.logo} alt={t('header.alt.logo')}/>
-          <div className={styles.menu_icon}>  
-            {showNavbar ? <ReactSVG src={close} className={`${styles.close_icon} ${global.square} ${global.hithere}`} onClick={handleShowNavbar} alt={t('header.alt.close_icon')}/> 
-            : <ReactSVG src={hamburger} className={`${styles.open_icon} ${global.square} ${global.hithere}`} onClick={handleShowNavbar} alt={t('header.alt.menu_icon')}/>}
-          </div>
-          <ul
-            className={styles.navbar}
-            style={{
-              display:
-                showNavbar || (!showNavbar && width > breakpoint) ? 'flex' : 'none'
-            }}>
-          <li className={`${global.hithere}`}>
-            <a href="#skills" className={`${global.square}`} onClick={
-                showNavbar ? handleShowNavbar : undefined
-            }>
-              {t('header.skills')}
-            </a>                    
-          </li>
-          <li  className={`${global.hithere}`}>
-            <a href="#projects" className={`${global.square}`} onClick={
-                showNavbar ? handleShowNavbar : undefined
-            }>
-              {t('header.projects')}
-            </a>
-          </li>
-          <li  className={`${global.hithere}`}>
-            <a href="#contact" className={`${global.square}`} onClick={
-                showNavbar ? handleShowNavbar : undefined
-            }>
-              {t('header.contact')}
-            </a>
-          </li>
-          <li>
-            <LanguageSwitcher/>
-          </li>
-          <li>
-            <ThemeSwitcher />
-          </li>
-        </ul>
-      </nav>
-    </header>
+        <div className={styles.logo_container}>
+         <ReactSVG src={coding} alt={t('header.alt.logo')}/>
+         <p>PINGRIS ALEXIS</p>
+       </div>
+        <div className={styles.menu_icon}>  
+          {showNavbar ? <ReactSVG src={close} className={`${styles.close_icon} ${global.square} ${global.hithere}`} onClick={handleShowNavbar} alt={t('header.alt.close_icon')}/> 
+          : <ReactSVG src={hamburger} className={`${styles.open_icon} ${global.square} ${global.hithere}`} onClick={handleShowNavbar} alt={t('header.alt.menu_icon')}/>}
+        </div>
+        <ul
+          className={styles.navbar}
+          style={{
+            display:
+              showNavbar || (!showNavbar && width > breakpoint) ? 'flex' : 'none'
+          }}>
+        <li className={`${global.hithere}`}>
+          <a href="#skills" className={`${global.square}`} onClick={
+            showNavbar ? handleShowNavbar : undefined
+          }>
+            {t('header.skills')}
+          </a>                    
+        </li>
+        <li  className={`${global.hithere}`}>
+          <a href="#projects" className={`${global.square}`} onClick={
+              showNavbar ? handleShowNavbar : undefined
+          }>
+            {t('header.projects')}
+          </a>
+        </li>
+        <li  className={`${global.hithere}`}>
+          <a href="#contact" className={`${global.square}`} onClick={
+              showNavbar ? handleShowNavbar : undefined
+          }>
+            {t('header.contact')}
+          </a>
+        </li>
+        <li>
+          <LanguageSwitcher/>
+        </li>
+        <li>
+          <ThemeSwitcher />
+        </li>
+      </ul>
+    </nav>
+  </header>
   )
 }
 

@@ -14,23 +14,13 @@
         margin: auto;
         padding: 1rem;
         margin: 2rem;
-        height: 31rem;
+        height: 36rem;
         width: 30rem;
         display: flex;
         flex-flow: column wrap;
         align-items: center;
         justify-content: space-around;
-        &:hover {
-            .hithere {
-                animation: hithere 1.2s ease infinite;
-            }
-            @keyframes hithere {
-                30% { transform: scale(1.1); }
-                100% { transform: scale(1); }
-            }
-        }
-        .project_description {
-            
+        .project_description {     
             display: flex;
             text-align: center;
             flex-direction: column;
@@ -40,8 +30,7 @@
                 padding: 0.5rem;
             }
         }
-        .project_image {
-            
+        .project_image {  
             display: flex;
             flex: 0.8;
             align-items: center;
@@ -53,12 +42,28 @@
                 width: 60%;
                 max-height: 100%;
             }         
-        }
-        .icon_container {
-            display: flex;
-            justify-content: center;
-            background: transparent;
-            margin-top: 0.4rem;
+        }       
+            .skill_container {
+                display: flex;
+                flex-direction: row;
+                justify-content: center;
+                li {
+                    img {
+                        box-shadow: none !important;
+                    }
+                }  
+            }
+            .link_container {
+                display: flex;
+                flex-direction: row;
+                justify-content: center;
+                    li {
+                        display: flex;
+                        flex-direction: column;
+                        justify-content: baseline;
+                        align-items: center;       
+                    }
+            }   
             a {
                 div {
                     div {
@@ -74,11 +79,10 @@
             .icon_image {
                 width: 4rem;
             }
-            li{
+            li {
                 border-radius: var(--border-radius);
                 margin: 0.5rem;
-                }
-            }        
+            }     
         } 
     }  
 }

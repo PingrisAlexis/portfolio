@@ -16,13 +16,14 @@
     "a": "un",
     "job": "Développeur Web",
     "name": "Alexis PINGRIS",
-    "description": "passionné par le clean code et la résolution de problèmes. Je m'épanouis dans l'apprentissage continu et collabore efficacement pour créer des solutions innovantes et optimisées."
+    "description": "passionné par le clean code et la résolution de problèmes, je m'épanouis dans l'apprentissage continu et collabore efficacement pour créer des solutions innovantes et optimisées."
   },
    "projects": {
     "section": "<PROJETS />",
     "title": {
-      "github": "Base de code",
-      "website": "Site web"
+      "github": "Code source",
+      "website": "Site web",
+      "technologies": "Technologies"
     },
     "alt": {
       "logo": "Logo du projet ",
@@ -40,7 +41,7 @@
     "hrnet" : "Migrations de librairies",
     "billed" : "Tests unitaires et d'intégrations",
     "argentbank" : "Utilisation d'APIs",
-    "gameon" : "Landing page",
+    "gameon" : "Page d'accueil",
     "la_chouette_agence": "Optimisation et référencement"
   },
   "language_switcher": {

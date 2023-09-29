@@ -17,13 +17,14 @@
     "," :",",
     "a": "a",
     "job": "Web Developer",
-    "description": "with a passion for clean code and problem-solving. I thrive on continuous learning and collaborate effectively to create innovative  and optimised solutions."
+    "description": "with a passion for clean code and problem-solving, I thrive on continuous learning and collaborate effectively to create innovative  and optimised solutions."
   },
   "projects": {
     "section": "<PROJECTS />",
     "title": {
       "github": "Code base",
-      "website": "Website"
+      "website": "Website",
+      "technologies": "Technologies"
     },
     "alt": {
       "logo": "Logo project ",
