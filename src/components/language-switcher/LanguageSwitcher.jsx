@@ -19,8 +19,16 @@ const LanguageSwitcher = () => {
       i18n.changeLanguage(lng);
     };
     
-    return isFrench ? <img className={`${styles.language_switcher_icon} ${global.square} ${global.hithere}`} src={france} alt={t('language_switcher.alt.french_flag')} title={t('language_switcher.title.french_flag')} onClick={() => {changeLanguage('fr'); handleLanguage()}}/> 
-    : <img className={`${styles.language_switcher_icon} ${global.square} ${global.hithere}`} src={usa} alt={t('language_switcher.alt.usa_flag')} title={t('language_switcher.title.usa_flag')} onClick={() => {changeLanguage('en'); handleLanguage()}}/>
+    return isFrench ? 
+    <div className={`${styles.language_switcher_icon} ${global.square} ${global.hithere}`}>
+      <img  src={france} alt={t('language_switcher.alt.french_flag')} title={t('language_switcher.title.french_flag')} onClick={() => {changeLanguage('fr'); handleLanguage()}}/> 
+    </div>
+    : 
+    <div  className={`${styles.language_switcher_icon} ${global.square} ${global.hithere}`}>
+      <img src={usa} alt={t('language_switcher.alt.usa_flag')} title={t('language_switcher.title.usa_flag')} onClick={() => {changeLanguage('en'); handleLanguage()}}/>
+    </div>
+    
+    
 }
 
 export default LanguageSwitcher

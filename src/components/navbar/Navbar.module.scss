@@ -38,7 +38,7 @@
       cursor: pointer;
       margin: 1rem;
       a {
-        padding: 1.3rem;
+        padding: 0.9rem;
         font-size: 1.5rem;
         font-weight: bold;  
         text-decoration: none;   
@@ -55,23 +55,30 @@
         }
       }
     }
-    .close_icon {
-      position: fixed;
-    }
-    .open_icon {
-      position: absolute;
-    }
-    .close_icon,
-    .open_icon {
-      top: 1.5rem;
-      right: 2.8rem;
-      padding: 0.5rem;
-      width: 5rem;
-      cursor: pointer;
-      z-index: 3;
-      display: none !important;
-      @media (max-width: 900px) {
-        display: block !important;
+    .menu_icon {
+      .close_icon {
+        position: fixed;
       }
-    }     
-  }
+      .open_icon {
+        position: absolute;
+      }
+      .close_icon,
+      .open_icon {
+        right: 2.8rem;
+        top: 2rem;
+        cursor: pointer;
+        z-index: 3;
+        display: none !important;
+        @media (max-width: 900px) {
+          display: block !important;
+        }
+      }  
+      div {
+        div { 
+          width: 4rem;
+          height: 4rem;
+          background-color: transparent;
+        } 
+    }  
+  } 
+}

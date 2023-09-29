@@ -17,14 +17,12 @@
   }
   
  .theme_switcher {
-    width: 5rem;
+    width: 4rem;
+    height: 4rem;
     border-radius: var(--border-radius);
     div {
-      width: 5rem;
-      height: 5rem;
+      width: 100%;
+      height: 100%;
       background-color: transparent;
-      svg {
-        padding: 0.5rem;
-    }
   } 
 } 
