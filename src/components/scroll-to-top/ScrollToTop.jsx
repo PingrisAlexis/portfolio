@@ -35,7 +35,7 @@ const ScrollToTop = () => {
 
   return (
     isVisible && (
-      <ReactSVG  aria-label={t('scroll_to_the_top.title')} className={`${styles.scroll_to_top_button} ${global.square} ${global.hithere}`}  src={top}onClick={scrollToTop} alt={t('scroll_to_the_top.alt.icon')} title={t('scroll_to_the_top.title')}/>
+      <ReactSVG  aria-label={t('scroll_to_the_top.alt')} className={`${styles.scroll_to_top_button} ${global.square} ${global.hithere}`}  src={top}onClick={scrollToTop} alt={t('scroll_to_the_top.alt.icon')} title={t('scroll_to_the_top.title')}/>
     )
   );
 };

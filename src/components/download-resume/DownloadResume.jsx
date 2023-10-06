@@ -20,8 +20,8 @@ const DownloadResume = () => {
         <h3>
         {t('resume.alt')}
         </h3>
-        <a className={`${global.square} ${global.hithere}`} href={resumePath} download={t('resume.download')}>
-          <ReactSVG className={`${global.square} ${global.hithere}`}  src={download} title={t('resume.title')} alt={t('resume.alt')}/>
+        <a className={`${global.square} ${global.hithere}`} href={resumePath} download={t('resume.download')} aria-label={t('resume.alt')}>
+          <ReactSVG className={`${global.square} ${global.hithere}`}  src={download} title={t('resume.title')}/>
         </a>
       </div>
     </section>  

@@ -60,14 +60,11 @@
     }
   },
   "scroll_to_the_top": {
-    "alt": {
-      "icon": "Scroll to the top"
-    },
-    "title": "Scroll to the top"
+    "alt": "Scroll to the top"
   },
   "resume": {
     "download": "Pingris_Alexis_en_Developer.pdf",
-    "alt": "Download",
+    "alt": "Download the resume",
     "title": "<RESUME />"
   },
   "contact": {
