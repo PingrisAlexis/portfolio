@@ -28,8 +28,8 @@
     },
     "alt": {
       "logo": "Logo project ",
-      "host": "Project hosting link ",
-      "github": "Project code hosting link ",
+      "host": "Visit project hosting",
+      "github": "Visit codebase hosting",
       "stack": "Technology used: "
     },
     "Kasa": "Integration",

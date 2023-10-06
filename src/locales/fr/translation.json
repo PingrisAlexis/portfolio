@@ -27,8 +27,8 @@
     },
     "alt": {
       "logo": "Logo du projet ",
-      "host": "Lien de l'hébergement du projet ",
-      "github": "Lien de l'hébergement du code du projet ",
+      "host": "Visiter le site du projet ",
+      "github": "Visiter le code du projet ",
       "stack": "Technologie utilisée: "
     },
     "Kasa": "Intégration",

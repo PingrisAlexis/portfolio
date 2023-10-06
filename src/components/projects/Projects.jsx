@@ -26,28 +26,28 @@ const Projects = () => {
                         <h3>
                             {t(`projects.${project.name}`)}
                         </h3>
-                        <ul className={styles.icon_container}>
+                        <div className={styles.icon_container}>
                             <p>{t(`projects.title.technologies`)}</p>
-                            <div className={styles.skill_container}>
+                            <ul className={styles.skill_container}>
                                 {project.stacks.map((stack, index) => (
                                 <li key={index} className={styles.icon_skill}>
                                     <img key={index} src={stack.src} className={`${styles.icon_image} ${global.square}`} alt={t('projects.alt.stack') + stack.name} title={stack.name}/>
                                 </li>
                                 ))}
-                            </div>
-                        </ul>
+                            </ul>
+                        </div>
                         <ul className={`${styles.link_container}`}>
                             {project.isHost ? 
                             <li>
                                 <p>{t(`projects.title.website`)}</p>
-                                <a href={project.url} target="_blank" rel="noreferrer">
-                                    <ReactSVG src={website} className={`${styles.icon_image} ${global.square} ${global.hithere}  ${styles.website}`} alt={t('projects.alt.host') + project.name} title={t('projects.title.website')} />
+                                <a href={project.url} target="_blank" rel="noreferrer" aria-label={t('projects.alt.host')}>
+                                    <ReactSVG src={website} className={`${styles.icon_image} ${global.square} ${global.hithere} ${styles.website}`} alt={t('projects.alt.host')}/>
                                 </a>
                             </li> : ''} 
                             <li>
                                 <p>{t(`projects.title.github`)}</p>
-                                <a href={project.github} target="_blank" rel="noreferrer">
-                                    <img src={github} className={`${styles.icon_image} ${global.square} ${global.hithere}`} alt={t('projects.alt.github') + project.name} title={t('projects.title.github')}/>
+                                <a href={project.github} target="_blank" rel="noreferrer" aria-label={t('projects.alt.github')}>
+                                    <img src={github} className={`${styles.icon_image} ${global.square} ${global.hithere}`} alt={t('projects.alt.github')}/>
                                 </a>        
                             </li>
                         </ul>
