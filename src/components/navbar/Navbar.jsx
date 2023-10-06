@@ -36,7 +36,7 @@ const Navbar = () => {
       <nav className={styles.banner}>
         <div className={styles.logo_container}>
          <ReactSVG src={coding} alt={t('header.alt.logo')}/>
-         <p>PINGRIS ALEXIS</p>
+         <p>PINGRIS Alexis</p>
        </div>
         <div className={styles.menu_icon}>  
           {showNavbar ? <ReactSVG src={close} className={`${styles.close_icon} ${global.square} ${global.hithere}`} onClick={handleShowNavbar} alt={t('header.alt.close_icon')}/> 
