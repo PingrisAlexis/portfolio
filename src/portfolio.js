@@ -204,9 +204,9 @@ export  const PROJECTS_DATA = [
         }], 
         "src": learn_at_home,
         "github": "https://github.com/PingrisAlexis/Learn-at-Home",
-        "url": "",
+        "url": "https://www.figma.com/file/odVgC9TotKUgraThMntoFN/Dev4U-projet-Learn%40Home?type=design&node-id=28-89&mode=design&t=5KkwzY4Auh0KSakN-0",
         "alt": "Learn@Home",
-        "isHost": false,     
+        "isHost": true,     
     },
     {
         "name": "fisheye",
