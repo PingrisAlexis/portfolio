@@ -1,8 +1,9 @@
 {
   "header": {
-    "skills": "<COMPÉTENCES />",
-    "projects": "<PROJETS />",
-    "contact": "<CONTACT />",
+    "skills": "Compétences ",
+    "projects": "Projets",
+    "contact": "Contact",
+    "cv": "Curriculum vitæ",
     "alt": {
       "logo": "Logo du portfolio",
       "close_icon" : "Fermeture du menu",
@@ -19,7 +20,7 @@
     "description": "passionné par le clean code et la résolution de problèmes, je m'épanouis dans l'apprentissage continu et collabore efficacement pour créer des solutions innovantes et optimisées."
   },
    "projects": {
-    "section": "<PROJETS />",
+    "section": "Projets",
     "title": {
       "github": "Code source",
       "website": "Site web",
@@ -53,7 +54,7 @@
     }
   },
   "skills": {
-    "section": "<COMPÉTENCES />",
+    "section": "Compétences",
     "alt": {
       "icon": "Compétence en "
     }
@@ -65,12 +66,12 @@
     "title": "Retourner en haut de page"
   },
     "resume": {
-      "download": "Pingris_Alexis_QC_Developpeur.pdf",
-      "alt": "Télécharger le CV",
-      "title": "<CURICULUM VITAE />"
+      "download": "Pingris_Alexis_Developpeur_Front_End.pdf",
+      "alt": "Télécharger",
+      "title": "Curriculum vitæ"
     },
     "contact": {
-      "section": "<CONTACT />",
+      "section": "Contact",
       "contact": "Me joindre",
       "email": "pingrisalexis@gmail.com",
       "url": {

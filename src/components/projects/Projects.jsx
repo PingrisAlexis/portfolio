@@ -6,6 +6,7 @@ import styles  from './Projects.module.scss'
 import global from '../../index.module.scss'
 import website from '../../assets/utils/website.svg'
 import github from '../../assets/utils/github.svg'
+import coding from '../../assets/utils/coding.svg'
 
 const Projects = () => {
 
@@ -14,6 +15,7 @@ const Projects = () => {
     return  (
         <section id="projects" className={styles.projects}>
             <h2>
+                <ReactSVG src={coding} className={global.coding_caret} alt={t('header.alt.logo')}/>
                 {t('projects.section')}
             </h2>
             <ul className={styles.cards_container}>

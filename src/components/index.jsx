@@ -7,5 +7,5 @@ export { default as  LanguageSwitcher } from './language-switcher/LanguageSwitch
 export { default as  ThemeProvider } from './theme/ThemeProvider'
 export { default as  ThemeSwitcher } from './theme/ThemeSwitcher'
 export { default as  ScrollToTop } from './scroll-to-top/ScrollToTop'
-export { default as  DownloadResume } from './download-resume/DownloadResume'
+export { default as  Resume } from './resume/Resume'
 export { default as  Footer } from './footer/Footer'

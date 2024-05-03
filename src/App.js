@@ -1,7 +1,15 @@
-import { React } from 'react'
-import { Navbar, About, Skills, Projects, Contact, DownloadResume, ScrollToTop, Footer } from './components'
+import { React, useEffect } from 'react'
+import { Navbar, About, Skills, Projects, Contact, Resume, ScrollToTop, Footer } from './components'
 
-const App = () => {
+const App = () => { 
+  
+  useEffect(() => {
+    const preloadImage = (url) => {
+        const img = new Image();
+        img.src = url;
+    };
+    preloadImage(require('./assets/dark_theme.png'));
+}, []);
 
   return (
     <div className="App" >
@@ -10,7 +18,7 @@ const App = () => {
       <Skills />
       <Projects />
       <Contact />
-      <DownloadResume />
+      <Resume />
       <ScrollToTop />
       <Footer />
     </div>  

@@ -1,7 +1,8 @@
 .projects {
-    width: 67vw; 
+    width: 60vw; 
     margin: auto;
-    margin-bottom: 15rem;
+    margin-bottom: 10rem;
+    text-align: center;
     @media (max-width: 1015px) {
         width: 80vw;
     }
@@ -11,25 +12,26 @@
         justify-content: center;
         align-content: center;
        .card {
-        margin: auto;
-        padding: 1rem;
-        margin: 2rem;
-        height: 36rem;
-        width: 30rem;
-        display: flex;
-        flex-flow: column wrap;
-        align-items: center;
-        justify-content: space-around;
-        .project_description {     
             display: flex;
-            text-align: center;
-            flex-direction: column;
-            justify-content: space-between;
-            background: transparent;
-            p {
-                padding: 0.5rem;
+            flex-flow: column wrap;
+            align-items: center;
+            justify-content: space-around;
+            margin: auto;
+            padding: 1rem;
+            margin: 0rem 0rem 2rem 2rem;
+            height: 36rem;
+            width: 30rem;
+            border: solid var(--border-width) var(--color-sec);
+            .project_description {     
+                display: flex;
+                text-align: center;
+                flex-direction: column;
+                justify-content: space-between;
+                background: transparent;
+                p {
+                    padding: 0.5rem;
+                }
             }
-        }
         .project_image {  
             display: flex;
             flex: 0.8;
@@ -51,18 +53,18 @@
                     img {
                         box-shadow: none !important;
                     }
-                }  
+                }
             }
             .link_container {
                 display: flex;
                 flex-direction: row;
                 justify-content: center;
-                    li {
-                        display: flex;
-                        flex-direction: column;
-                        justify-content: baseline;
-                        align-items: center;       
-                    }
+                li {
+                    display: flex;
+                    flex-direction: column;
+                    justify-content: baseline;
+                    align-items: center;       
+                }
             }   
             a {
                 div {
@@ -73,8 +75,8 @@
                         svg {
                             padding: 0.5rem;
                         }
-                    } 
-                }  
+                    }
+                }
             }
             .icon_image {
                 width: 4rem;
@@ -82,7 +84,7 @@
             li {
                 border-radius: var(--border-radius);
                 margin: 0.5rem;
-            }     
-        } 
-    }  
+            }  
+        }
+    }
 }

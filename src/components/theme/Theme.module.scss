@@ -5,6 +5,7 @@
     --background-color-primary: #737373;
     --background-color-footer: #111111;
     --border-radius: 12px;
+    --border-width: 0.2rem;
   }
 
   .light {
@@ -14,8 +15,9 @@
     --background-color-primary: #ecf0f1;
     --background-color-footer: #00250F;    
     --border-radius: 12px;
+    --border-width: 0.2rem;
   }
-  
+
  .theme_switcher {
     width: 4rem;
     height: 4rem;

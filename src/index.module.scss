@@ -38,17 +38,14 @@ svg {
   height: 100%;
 }
 
-a {
-  text-decoration: none;
-}
-
 h1 {
   font-size: 2rem;
 }
 
 h2 {
   font-size: 2.3rem;
-  text-align: center;
+  color: var(--color-sec);
+  display: inline-flex;
 }
 
 h3 {
@@ -83,6 +80,13 @@ p {
     animation: hithere 1.6s ease infinite;
     box-shadow: rgba(0, 0, 0, 0.3) 0px 19px 38px, rgba(0, 0, 0, 0.22) 0px 15px 12px;
   }
+}
+
+.coding_caret {
+  width: 5.2rem;
+  color: var(--color);
+  position: relative;
+  bottom: .9rem;
 }
 
 @keyframes hithere {

@@ -1,8 +1,9 @@
 {
   "header": {
-    "skills": "<SKILLS />",
-    "projects": "<PROJECTS />",
-    "contact": "<CONTACT />",
+    "skills": "Skills",
+    "projects": "Projects",
+    "contact": "Contact",
+    "cv": "Curriculum vitæ",
     "alt": {
       "logo": "Portfolio logo",
       "close_icon" : "Close menu icon",
@@ -20,7 +21,7 @@
     "description": "with a passion for clean code and problem-solving, I thrive on continuous learning and collaborate effectively to create innovative  and optimised solutions."
   },
   "projects": {
-    "section": "<PROJECTS />",
+    "section": "Projects",
     "title": {
       "github": "Code base",
       "website": "Website",
@@ -54,7 +55,7 @@
     }
   },
   "skills": {
-    "section": "<SKILLS />",
+    "section": "Skills",
     "alt": {
       "icon": "Expertise in "
     }
@@ -65,10 +66,10 @@
   "resume": {
     "download": "Pingris_Alexis_EN_Developer.pdf",
     "alt": "Download the resume",
-    "title": "<RESUME />"
+    "title": "Resume"
   },
   "contact": {
-    "section": "<CONTACT />",
+    "section": "contact",
     "contact": "Get in touch",
     "email": "pingrisalexis@gmail.com",
     "url": {

@@ -2,9 +2,11 @@ import React from 'react'
 import styles  from './Contact.module.scss'
 import global from '../../index.module.scss'
 import { useTranslation } from 'react-i18next'
+import { ReactSVG } from 'react-svg'
 import light_gmail from '../../assets/utils/light_gmail.svg'
 import linkedin from '../../assets/utils/linkedin.svg'
 import github from '../../assets/utils/github.svg'
+import coding from '../../assets/utils/coding.svg'
 
 const Contact = () => {
 
@@ -12,10 +14,11 @@ const Contact = () => {
 
   return (
     <section id="contact" className={styles.contact}>
-        <h2>  
-          {t('contact.section')}
-        </h2>
-        <div className={`${styles.container} ${global.square}`}>
+      <h2>
+        <ReactSVG src={coding} className={global.coding_caret} alt={t('header.alt.logo')}/>
+        {t('contact.section')}
+      </h2>
+      <div className={`${styles.container} ${global.square}`}>
         <ul className={styles.items}>
           <li>
           <a href={`mailto:${t('contact.email')}`}>
@@ -32,8 +35,8 @@ const Contact = () => {
               <img className={`${global.square} ${global.hithere}`} src={github} alt={t('contact.alt.github')} title={t('contact.alt.github')}/>
             </a>         
           </li>
-        </ul>
-        </div>  
+        </ul>  
+      </div>  
     </section>
   )
 }

@@ -1,8 +1,10 @@
 import React from 'react'
 import styles  from './Skills.module.scss'
 import global  from '../../index.module.scss'
+import coding from '../../assets/utils/coding.svg'
 import { SKILLS_DATA } from '../../portfolio.js'
 import { useTranslation } from 'react-i18next'
+import { ReactSVG } from 'react-svg'
 
 const Skills = () => {
 
@@ -11,6 +13,7 @@ const Skills = () => {
     return  (
         <section id="skills" className={styles.skills}>
             <h2>
+                <ReactSVG src={coding} className={global.coding_caret} alt={t('header.alt.logo')}/>
                 {t('skills.section')}
             </h2>
             <ul className={global.square}>
