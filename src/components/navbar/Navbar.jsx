@@ -1,5 +1,4 @@
 import React from 'react'
-import { useState } from "react";
 import styles  from './Navbar.module.scss'
 import global from '../../index.module.scss'
 import { useTranslation } from 'react-i18next'
