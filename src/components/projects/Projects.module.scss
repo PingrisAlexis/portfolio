@@ -80,10 +80,16 @@
             }
             .icon_image {
                 width: 4rem;
+                background-color: transparent !important;
+
             }
             li {
                 border-radius: var(--border-radius);
                 margin: 0.5rem;
+                div {
+                    background-color: transparent !important;
+
+                }
             }  
         }
     }
