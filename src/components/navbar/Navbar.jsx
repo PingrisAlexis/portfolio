@@ -1,4 +1,4 @@
-import React, { useState, useEffect } from 'react';
+import React, { useEffect } from 'react';
 import styles  from './Navbar.module.scss'
 import global from '../../index.module.scss'
 import { useTranslation } from 'react-i18next'
@@ -34,7 +34,7 @@ const Navbar = () => {
     return () => {
       window.removeEventListener('resize', handleResize);
     };
-  }, []);
+  }, [showNavbar]);
 
   const handleShowNavbar = () => {
     if (showNavbar) {
