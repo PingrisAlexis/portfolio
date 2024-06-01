@@ -25,7 +25,7 @@ const Resume = () => {
   }, []);
 
   return (
-    <section id="cv" className={styles.download_resume}>
+    <section id="resume" className={`${styles.download_resume} ${global.anchor}`}>
       <h2>
         <ReactSVG src={coding} className={global.coding_caret} alt={t('header.alt.logo')}/>
         {t('resume.title')}

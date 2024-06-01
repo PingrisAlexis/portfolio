@@ -1,9 +1,10 @@
 {
   "header": {
     "skills": "Skills",
-    "projects": "Projects",
+    "personnals-projects": "Personnals Projects",
+    "studies-projects": "Studies Projects",
     "contact": "Contact",
-    "cv": "Curriculum vitæ",
+    "resume": "Resume",
     "alt": {
       "logo": "Portfolio logo",
       "close_icon" : "Close menu icon",
@@ -17,13 +18,21 @@
     "name": "Alexis PINGRIS",
     "," :",",
     "a": "a",
-    "job": "Web Developer",
+    "job": "Front-End Developer",
     "description": "with a passion for clean code and problem-solving, I thrive on continuous learning and collaborate effectively to create innovative  and optimised solutions."
   },
   "projects": {
-    "section": "Projects",
+    "section" : {
+      "personnals" : "Personal Projects",
+      "studies": "Study Projects"
+    },
+    "type": {
+      "frontend": "Front-End Project",
+      "backend": "Back-End Project",
+      "fullstack": "Full-Stack Project"
+    },
     "title": {
-      "github": "Code base",
+      "github": "Codebase",
       "website": "Website",
       "technologies": "Technologies"
     },
@@ -86,3 +95,5 @@
     "copyright": "Copyright - 2023, PINGRIS Alexis"
   }
 }
+
+

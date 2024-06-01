@@ -1,9 +1,10 @@
 {
   "header": {
     "skills": "Compétences ",
-    "projects": "Projets",
+    "personnals-projects": "Projets Personnels",
+    "studies-projects": "Projets d'Études",
     "contact": "Contact",
-    "cv": "Curriculum vitæ",
+    "resume": "CV",
     "alt": {
       "logo": "Logo du portfolio",
       "close_icon" : "Fermeture du menu",
@@ -15,12 +16,20 @@
     "iam": "Je suis",
     "," :",",
     "a": "un",
-    "job": "Développeur Web",
+    "job": "Développeur Front-End",
     "name": "Alexis PINGRIS",
     "description": "passionné par le clean code et la résolution de problèmes, je m'épanouis dans l'apprentissage continu et collabore efficacement pour créer des solutions innovantes et optimisées."
   },
-   "projects": {
-    "section": "Projets",
+  "projects": {
+    "section" : {
+      "personnals" : "Projets Personnels",
+      "studies": "Projets d'Études"
+    },
+    "type": {
+      "frontend": "Projet Front-End",
+      "backend": "Projet Back-End",
+      "fullstack": "Projet Full-Stack"
+    },
     "title": {
       "github": "Code source",
       "website": "Site web",
@@ -39,7 +48,7 @@
     "groupomania" : "Réseau social d'entreprise",
     "learn_at_home" : "Maquettes",
     "fisheye" : "Intégration",
-    "hrnet" : "Migrations de librairies",
+    "hrnet" : "Migration de librairies",
     "billed" : "Tests unitaires et d'intégrations",
     "argentbank" : "Utilisation d'APIs",
     "gameon" : "Page d'accueil",

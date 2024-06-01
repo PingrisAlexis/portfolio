@@ -15,10 +15,8 @@ root.render(
       <BrowserRouter>
         <I18nextProvider i18n={i18n}>
       <ThemeProvider>
-
             <App />
       </ThemeProvider>
-
         </I18nextProvider>
     </BrowserRouter>
   </React.StrictMode>

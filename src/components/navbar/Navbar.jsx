@@ -1,4 +1,4 @@
-import React from 'react'
+import React, { useState, useEffect } from 'react';
 import styles  from './Navbar.module.scss'
 import global from '../../index.module.scss'
 import { useTranslation } from 'react-i18next'
@@ -10,32 +10,64 @@ import { ReactSVG } from 'react-svg'
 
 const Navbar = () => {
 
-  const [showNavbar, setShowNavbar] = React.useState(false);
+  const [showNavbar, setShowNavbar] = React.useState(true);
+  const [width, setWidth] = React.useState(window.innerWidth);
+  const breakpoint = 1100;
 
   const { t } = useTranslation();
+
+
+  useEffect(() => {
+    const handleResize = () => {
+      const windowWidth = window.innerWidth;
+      setWidth(windowWidth);
+      setShowNavbar(!showNavbar)
+      if (windowWidth > breakpoint) {
+        setShowNavbar(true)
+      }
+      else if (windowWidth <= breakpoint) {
+        setShowNavbar(false)
+      }
+    };
+
+    window.addEventListener('resize', handleResize);
+    return () => {
+      window.removeEventListener('resize', handleResize);
+    };
+  }, []);
 
   const handleShowNavbar = () => {
     if (showNavbar) {
       document.querySelector('ul').classList.add(`${styles.navbar_disappear}`);
       setTimeout(() => {  
-        setShowNavbar(!showNavbar);
+        setShowNavbar(false);
       }, 800);
-    }
-    else {
-      setShowNavbar(!showNavbar);
-    }
+      } else {
+        setShowNavbar(!showNavbar);
+
+      }
   };
 
+  const handleLinkClick = () => {
+    if (width <= breakpoint) {
+      document.querySelector('ul').classList.add(`${styles.navbar_disappear}`);
+        setTimeout(() => {  
+          setShowNavbar(false);
+        }, 800);
+    }
+  };
   return (
-    <header className={styles.header}>     
-      <nav className={styles.banner}>
+    <header className={styles.header}>  
+      <a href="#about">
         <div className={styles.logo_container}>
-         <ReactSVG src={coding} alt={t('header.alt.logo')}/>
-         <p>PINGRIS Alexis</p>
-       </div>
+          <ReactSVG src={coding} alt={t('header.alt.logo')}/>
+       </div>   
+      </a>
+      <nav className={styles.banner}>
+        
        <div className={styles.menu_icon}>  
-          {showNavbar ? <ReactSVG src={close} className={`${styles.close_icon} ${global.square} ${global.hithere}`} onClick={handleShowNavbar} alt={t('header.alt.close_icon')}/>
-           : <ReactSVG src={hamburger} className={`${styles.open_icon} ${global.square} ${global.hithere}`} onClick={handleShowNavbar} alt={t('header.alt.menu_icon')}/> 
+          {showNavbar ? <ReactSVG src={close} className={`${styles.close_icon} ${global.square} ${global.hithere}`} onClick={() => handleShowNavbar()} alt={t('header.alt.close_icon')}/>
+           : <ReactSVG src={hamburger} className={`${styles.open_icon} ${global.square} ${global.hithere}`} onClick={() => handleShowNavbar()} alt={t('header.alt.menu_icon')}/> 
            }
         </div>
         <ul className={showNavbar ? `${styles.navbar_appear} ${styles.navbar} ${global.square}`: `${styles.navbar_disappear} ${styles.navbar} ${global.square}`}
@@ -44,19 +76,25 @@ const Navbar = () => {
               showNavbar ? 'flex' : 'none'
             }}
             >
-          <li>
+          <li onClick={() => handleLinkClick()}>
             <ReactSVG src={coding} className={global.coding_caret} alt={t('header.alt.logo')}/>
             <a href="#skills">
               {t('header.skills')}
             </a>
           </li>
-          <li>
+          <li onClick={() => handleLinkClick()}>
             <ReactSVG src={coding} className={global.coding_caret} alt={t('header.alt.logo')}/>
-            <a href="#projects">
-              {t('header.projects')} 
+            <a href="#personnals-projects">
+              {t('header.personnals-projects')} 
             </a>
           </li>
-          <li>
+          <li onClick={() => handleLinkClick()}>
+            <ReactSVG src={coding} className={global.coding_caret} alt={t('header.alt.logo')}/>
+            <a href="#studies-projects">
+              {t('header.studies-projects')} 
+            </a>
+          </li>
+          <li onClick={() => handleLinkClick()}> 
           <div>
             <ReactSVG src={coding} className={global.coding_caret} alt={t('header.alt.logo')}/>
             </div>
@@ -64,10 +102,10 @@ const Navbar = () => {
               {t('header.contact')}
             </a>
           </li>
-          <li>
-            <ReactSVG src={coding} className={global.coding_caret} alt={t('header.alt.logo')}/>
-            <a href="#cv">
-              {t('header.cv')}
+          <li  onClick={() => handleLinkClick()}>
+            <ReactSVG src={coding} className={global.coding_caret} alt={t('header.alt.logo')} />
+            <a href="#resume">
+              {t('header.resume')}
             </a>
           </li>
           <li>

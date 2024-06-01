@@ -1,6 +1,5 @@
 body {
   margin: 0;
-  font-family: 'Poppins', sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   line-height: 1.5;
@@ -11,6 +10,7 @@ body {
   background-position: center;
   color: var(--color);
   border-radius: var(--border-radius);
+    font-family: 'Poppins', sans-serif;
 }
 
 html {
@@ -45,7 +45,14 @@ h1 {
 h2 {
   font-size: 2.3rem;
   color: var(--color-sec);
-  display: inline-flex;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-transform: uppercase;
+  div {
+    position: relative;
+    top: .2rem;
+  }
 }
 
 h3 {
@@ -76,8 +83,8 @@ p {
 
 .hithere {
   box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+  transition: box-shadow .6s ease;
    &:hover {
-    animation: hithere 1.6s ease infinite;
     box-shadow: rgba(0, 0, 0, 0.3) 0px 19px 38px, rgba(0, 0, 0, 0.22) 0px 15px 12px;
   }
 }
@@ -85,11 +92,13 @@ p {
 .coding_caret {
   width: 5.2rem;
   color: var(--color);
-  position: relative;
-  bottom: .9rem;
 }
 
 @keyframes hithere {
   30% { transform: scale(1.1); }
   100% { transform: scale(1); }
+}
+
+.anchor {
+  scroll-margin-top: 10rem
 }

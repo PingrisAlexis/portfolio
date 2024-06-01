@@ -8,7 +8,7 @@ const About = () => {
     const { t } = useTranslation();
     
     return  (
-        <section id="about" className={`${styles.about} ${global.square}`}>
+        <section id="about" className={`${styles.about} ${global.anchor} ${global.square}`}>
             <h1>
                 {t('home.presentation')}
             </h1>

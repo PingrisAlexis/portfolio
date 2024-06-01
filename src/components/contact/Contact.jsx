@@ -13,7 +13,7 @@ const Contact = () => {
   const { t } = useTranslation();
 
   return (
-    <section id="contact" className={styles.contact}>
+    <section id="contact" className={`${styles.contact} ${global.anchor}`}>
       <h2>
         <ReactSVG src={coding} className={global.coding_caret} alt={t('header.alt.logo')}/>
         {t('contact.section')}
