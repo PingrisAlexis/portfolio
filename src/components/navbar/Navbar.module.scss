@@ -22,9 +22,10 @@
     justify-content: center;
     padding: 1rem;
     background-color: transparent;
-      background: var(--background-color-primary);
-      border-radius: var(--border-radius);
-      border: solid var(--border-width) var(--color-sec);
+    background: var(--background-color-primary);
+    border-radius: var(--border-radius);
+    border: solid var(--border-width) var(--color-sec);
+    box-shadow: var(--box-shadow);
     div {
       div {
         svg {
@@ -46,7 +47,18 @@
     align-items: center;
     flex-flow: row wrap;
     background-color: transparent;
-
+    box-shadow: var(--box-shadow);
+    a {
+      text-decoration: none;  
+      box-shadow: none;
+      pointer-events: auto;
+      cursor: pointer;
+      transition: transform 0.6s ease-in-out, color .2s ease-in-out; 
+      &:hover {
+        color: var(--color-sec);
+        transform: translateY(-.2rem);
+      }
+    }
     @media (max-width: 1400px) {
       justify-content: center;
       align-items: center;
@@ -96,22 +108,9 @@
         position: relative;
         top: 0.2rem;
       }
-      a {
-        text-decoration: none;  
-        box-shadow: none;
-        pointer-events: auto;
-        cursor: pointer;
-      }
+  
     }
-    a {
-      transition: transform 0.6s ease-in-out, color .2s ease-in-out; 
-    }
-    
-    a:hover {
-      color: var(--color-sec);
 
-      transform: translateY(-.2rem); /* Déplace l'élément de 3 pixels vers le haut au survol */
-    }
     .menu_icon {
       .close_icon,
       .open_icon {

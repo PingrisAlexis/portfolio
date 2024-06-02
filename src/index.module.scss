@@ -10,7 +10,7 @@ body {
   background-position: center;
   color: var(--color);
   border-radius: var(--border-radius);
-    font-family: 'Poppins', sans-serif;
+  font-family: 'Poppins', sans-serif;  
 }
 
 html {
@@ -82,7 +82,7 @@ p {
 }
 
 .hithere {
-  box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+  box-shadow: var(--box-shadow);
   transition: box-shadow .6s ease;
    &:hover {
     box-shadow: rgba(0, 0, 0, 0.3) 0px 19px 38px, rgba(0, 0, 0, 0.22) 0px 15px 12px;

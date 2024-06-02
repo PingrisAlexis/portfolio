@@ -6,6 +6,8 @@
   z-index: 1;
   height: 4rem;
   width: 4rem;
+  box-shadow: var(--box-shadow);
+
   div {
     background-color: transparent;
     svg {

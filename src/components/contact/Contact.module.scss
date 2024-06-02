@@ -1,6 +1,7 @@
 .contact {
   margin: auto;
   text-align: center;
+  box-shadow: var(--box-shadow);
   .container {
     border: solid var(--border-width) var(--color-sec);
     display: flex;

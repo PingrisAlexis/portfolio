@@ -59,7 +59,7 @@ const Navbar = () => {
   return (
     <header className={styles.header}>  
       <a href="#about">
-        <div className={styles.logo_container}>
+        <div className={`${styles.logo_container}`}>
           <ReactSVG src={coding} alt={t('header.alt.logo')}/>
        </div>   
       </a>
