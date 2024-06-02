@@ -33,7 +33,7 @@
     "alt": {
       "logo": "Logo du projet ",
       "host": "Visiter le site du projet ",
-      "github": "Visiter le code du projet ",
+      "github": "Découvrir le code du projet ",
       "stack": "Technologie utilisée: "
     },
     "Kasa": {
@@ -127,9 +127,9 @@
         "github": "https://github.com/PingrisAlexis"
       },
       "alt": {
-        "gmail": "Contactez moi par email!",
-        "linkedin": "Visitez mon profil LinkedIn!",
-        "github": "Visitez mon profil GitHub!"
+        "gmail": "Me concacter par mail",
+        "linkedin": "Visitez mon profil LinkedIn",
+        "github": "Découvrir mon dépôt GitHub"
       }
     },
   "footer": {

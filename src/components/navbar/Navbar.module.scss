@@ -76,7 +76,6 @@
       position: fixed;
       right: -0.9rem;
       top: 8rem;
-
       padding: 1.5rem;
     }
     }
@@ -89,13 +88,8 @@
       padding-right: 1.5rem;
       font-size: 1.4rem;
       background-color: transparent;
-      cursor: pointer;
       @media (max-width: 1100px) {
         padding: .7rem;
-      }
-      &:hover a {
-        color: var(--color-sec);
-        
       }
       svg {
         height: 4.1rem;
@@ -106,15 +100,17 @@
         text-decoration: none;  
         box-shadow: none;
         pointer-events: auto;
-        
+        cursor: pointer;
       }
     }
-    li {
-      transition: transform .6s ease-in-out; /* Ajoute une transition au changement de transformation */
+    a {
+      transition: transform 0.6s ease-in-out, color .2s ease-in-out; 
     }
     
-    li:hover {
-      transform: translateY(-3px); /* Déplace l'élément de 3 pixels vers le haut au survol */
+    a:hover {
+      color: var(--color-sec);
+
+      transform: translateY(-.2rem); /* Déplace l'élément de 3 pixels vers le haut au survol */
     }
     .menu_icon {
       .close_icon,

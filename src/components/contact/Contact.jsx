@@ -6,7 +6,7 @@ import light_gmail from '../../assets/utils/light_gmail.svg'
 import linkedin from '../../assets/utils/linkedin.svg'
 import github from '../../assets/utils/github.svg'
 import coding from '../../assets/utils/coding.svg'
-
+import { ReactSVG } from 'react-svg'
 const Contact = () => {
 
   const { t } = useTranslation();
@@ -15,7 +15,7 @@ const Contact = () => {
     <div id="contact" className={`${styles.contact} ${global.anchor}`}>
       <div className={`${styles.container} ${global.square}`}>
       <h2>
-        <img src={coding} className={global.coding_caret} alt={t('header.alt.logo')}/>
+        <ReactSVG src={coding} className={global.coding_caret} alt={t('header.alt.logo')}/>
         {t('contact.section')}
       </h2>
         <ul className={styles.items}>
