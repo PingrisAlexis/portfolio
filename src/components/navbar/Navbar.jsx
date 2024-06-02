@@ -10,10 +10,11 @@ import { ReactSVG } from 'react-svg'
 
 const Navbar = () => {
 
-  const [showNavbar, setShowNavbar] = React.useState(true);
-  const [width, setWidth] = React.useState(window.innerWidth);
   const breakpoint = 1100;
-
+  const isDesktop = window.innerWidth > breakpoint;
+  const [showNavbar, setShowNavbar] = React.useState(isDesktop);
+  const [width, setWidth] = React.useState(window.innerWidth);
+  
   const { t } = useTranslation();
 
 
