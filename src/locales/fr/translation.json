@@ -25,11 +25,6 @@
       "personnals" : "Projets Personnels",
       "studies": "Projets d'Études"
     },
-    "type": {
-      "frontend": "Projet Front-End",
-      "backend": "Projet Back-End",
-      "fullstack": "Projet Full-Stack"
-    },
     "title": {
       "github": "Code source",
       "website": "Site web",
@@ -41,18 +36,62 @@
       "github": "Visiter le code du projet ",
       "stack": "Technologie utilisée: "
     },
-    "Kasa": "Intégration",
-    "SoPekocko": "Création d'APIs sécurisées",
-    "SportSee" : "Tableau de bord analytique",
-    "les_petits_plats" : "Algorythmes de recherche",
-    "groupomania" : "Réseau social d'entreprise",
-    "learn_at_home" : "Maquettes",
-    "fisheye" : "Intégration",
-    "hrnet" : "Migration de librairies",
-    "billed" : "Tests unitaires et d'intégrations",
-    "argentbank" : "Utilisation d'APIs",
-    "gameon" : "Page d'accueil",
-    "la_chouette_agence": "Optimisation et référencement"
+    "Kasa": {
+      "type": "Projet Front-end",
+      "description": "Site vitrine"
+    },
+    "SoPekocko": {
+      "type": "Projet Back-end",
+      "description": "API de critiques et d'évaluations"
+    },
+    "SportSee": {
+      "type": "Projet Front-end",
+      "description": "Tableau de bord analytique"
+    },
+    "les_petits_plats": {
+      "type": "Projet Front-end",
+      "description": "Algorithmes de recherche"
+    },
+    "groupomania": {
+      "type": "Projet Full-Stack",
+      "description": "Réseau social"
+    },
+    "learn_at_home": {
+      "type": "Projet UI/UX",
+      "description": "Définir les besoins d'un projet web"
+    },
+    "fisheye": {
+      "type": "Projet Front-end",
+      "description": "Portfolio de photographes"
+    },
+    "hrnet": {
+      "type": "Projet Front-end",
+      "description": "Migration de librairies"
+    },
+    "billed": {
+      "type": "Projet Front-end",
+      "description": "Tests unitaires et d'intégration"
+    },
+    "argentbank": {
+      "type": "Projet Front-end",
+      "description": "Compte bancaire"
+    },
+    "gameon": {
+      "type": "Projet Front-end",
+      "description": "Landing page"
+    },
+    "la_chouette_agence": {
+      "type": "Projet Front-end",
+      "description": "Optimisation et SEO"
+    },
+    "space_tourism": {
+      "type": "Projet Front-end",
+      "description": "Site vitrine"
+    },
+    "portfolio": {
+      "type": "Projet Front-end",
+      "description": "Mes projets web"
+    }
   },
   "language_switcher": {
     "alt": {

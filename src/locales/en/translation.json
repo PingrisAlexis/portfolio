@@ -26,11 +26,6 @@
       "personnals" : "Personal Projects",
       "studies": "Study Projects"
     },
-    "type": {
-      "frontend": "Front-End Project",
-      "backend": "Back-End Project",
-      "fullstack": "Full-Stack Project"
-    },
     "title": {
       "github": "Codebase",
       "website": "Website",
@@ -40,20 +35,64 @@
       "logo": "Logo project ",
       "host": "Visit project hosting",
       "github": "Visit codebase hosting",
-      "stack": "Technology used: "
+      "stack": "Technology used:"
     },
-    "Kasa": "Integration",
-    "SoPekocko": "Create Secured APIs",
-    "SportSee" : "Analytic dashboard",
-    "les_petits_plats" : "Search algorythms",
-    "groupomania" : "Company social network",
-    "learn_at_home" : "Mock-ups",
-    "fisheye" : "Integration",
-    "hrnet" : "Libraries migration",
-    "billed" : "Unit and integration testing",
-    "argentbank" : "Use of APIs",
-    "gameon" : "Landing page",
-    "la_chouette_agence": "Optimisation and SEO"
+    "Kasa": {
+      "type": "Front-end Project",
+      "description": "Showcase site"
+    },
+    "SoPekocko": {
+      "type": "Back-end Project",
+      "description": "API for a review application"
+    },
+    "SportSee": {
+      "type": "Front-end Project",
+      "description": "Analytic dashboard"
+    },
+    "les_petits_plats": {
+      "type": "Front-end Project",
+      "description": "Search algorythms"
+    },
+    "groupomania": {
+      "type": "Full-Stack Project",
+      "description": "Social network"
+    },
+    "learn_at_home": {
+      "type": "UI/UX Project",
+      "description": "Define the needs of a web project"
+    },
+    "fisheye": {
+      "type": "Front-end Project",
+      "description": "Photographers Portfolio"
+    },
+    "hrnet": {
+      "type": "Front-end Project",
+      "description": "Libraries migration"
+    },
+    "billed": {
+      "type": "Front-end Project",
+      "description": "Unit and integration testing"
+    },
+    "argentbank": {
+      "type": "Front-end Project",
+      "description": "Bank account"
+    },
+    "gameon": {
+      "type": "Front-end Project",
+      "description": "Landing page"
+    },
+    "la_chouette_agence": {
+      "type": "Front-end Project",
+      "description": "Optimisation and SEO"
+    },
+    "space_tourism": {
+      "type": "Front-end Project",
+      "description": "Showcase site"
+    },
+    "portfolio": {
+      "type": "Front-end Project",
+      "description": "My web projects"
+    }
   },
   "language_switcher": {
     "alt": {
@@ -74,7 +113,7 @@
   },
   "resume": {
     "download": "Pingris_Alexis_EN_Dev_Front_End.pdf",
-    "alt": "Download the resume",
+    "alt": "Download",
     "title": "Resume"
   },
   "contact": {

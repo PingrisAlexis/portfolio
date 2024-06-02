@@ -108,7 +108,7 @@
 
  export const PROJECTS_DATA = [ 
     {
-        "name": "Space Tourism",
+        "name": "space_tourism",
         "type": "Front-End",
         "stacks": [{
             "name": "VueJS",
@@ -131,7 +131,7 @@
         "isPersonnalProject": true
     },
     {
-        "name": "Portfolio",
+        "name": "portfolio",
         "type": "Front-End",
         "stacks": [{
             "name": "ReactJS",

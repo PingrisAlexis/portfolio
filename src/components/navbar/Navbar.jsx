@@ -94,18 +94,18 @@ const Navbar = () => {
               {t('header.studies-projects')} 
             </a>
           </li>
+          <li  onClick={() => handleLinkClick()}>
+            <ReactSVG src={coding} className={global.coding_caret} alt={t('header.alt.logo')} />
+            <a href="#resume">
+              {t('header.resume')}
+            </a>
+          </li>
           <li onClick={() => handleLinkClick()}> 
           <div>
             <ReactSVG src={coding} className={global.coding_caret} alt={t('header.alt.logo')}/>
             </div>
             <a href="#contact">
               {t('header.contact')}
-            </a>
-          </li>
-          <li  onClick={() => handleLinkClick()}>
-            <ReactSVG src={coding} className={global.coding_caret} alt={t('header.alt.logo')} />
-            <a href="#resume">
-              {t('header.resume')}
             </a>
           </li>
           <li>

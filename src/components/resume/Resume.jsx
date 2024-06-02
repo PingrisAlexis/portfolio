@@ -32,9 +32,12 @@ const Resume = () => {
       </h2>
       <div className={`${styles.container} ${global.square}`}>
         { width > breakpoint ? <iframe src={t('resume.download')} title={t('resume.alt')} width="100%" height="600"></iframe> 
-          : <a className={`${global.square} ${global.hithere}`} href={resumePath} download={t('resume.download')} aria-label={t('resume.alt')}>
-              <ReactSVG className={`${global.square} ${global.hithere}`}  src={download} title={t('resume.title')}/>
-            </a>
+          : <>
+          <p>{t(`resume.alt`)}</p>
+              <a className={`${global.square} ${global.hithere}`} href={resumePath} download={t('resume.download')} aria-label={t('resume.alt')}>
+                <ReactSVG className={`${global.square} ${global.hithere}`}  src={download} title={t('resume.title')}/>
+              </a>
+          </>
         }
       </div>
     </section>  

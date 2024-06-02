@@ -1,9 +1,14 @@
 .footer_container {
     background: var(--background-color-footer);
-    height: 7rem;
+    padding-top: 3.5rem;
     display: flex;
+    flex-direction: column;
     justify-content: center;
     align-items: center;
     color: #ecf0f1;
     margin-top: 15rem;
+    text-align: center;
+    p {
+        padding: 1rem;
+    }
 }

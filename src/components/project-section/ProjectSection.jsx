@@ -12,10 +12,11 @@ const ProjectSection =  ({ titleKey, projects, id }) => {
 
    const renderProjectCard = (project, index) => (
     <li key={index} className={`${styles.card} ${global.square}`}>
-            <h3>{t(`${project.type}`)}</h3>
+            <h3>{t(`projects.${project.name}.type`)}</h3>
         <div className={styles.project_image}>
             <img src={project.src} alt={t('projects.alt.logo') + project.alt}/>
         </div>
+        <span className={styles.project_presentation}>{t(`projects.${project.name}.description`)}</span>
         <hr></hr>
         <div className={styles.project_description}>
             <div className={styles.icon_container}>

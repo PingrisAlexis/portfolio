@@ -1,17 +1,20 @@
 import React from 'react'
 import styles  from './Footer.module.scss'
-// import global from '../../index.module.scss'
 import { useTranslation } from 'react-i18next'
-
+import { Contact } from '../index.jsx'
 const Footer = () => {
 
     const { t } = useTranslation();
     
   return (
     <footer className={styles.footer_container}>
-        <p>
-        &copy;{t('footer.copyright')}
-        </p>
+        <Contact />
+        <div>
+          <p>
+            &copy;{t('footer.copyright')}
+          </p>
+        </div>
+
     </footer> 
   );
 };
