@@ -1,5 +1,5 @@
 import { React, useEffect } from 'react'
-import { Navbar, About, Skills, Projects, Contact, Resume, ScrollToTop, Footer } from './components'
+import { Navbar, About, Skills, Projects, Resume, ScrollToTop, Footer } from './components'
 
 const App = () => { 
   
@@ -18,7 +18,6 @@ const App = () => {
       <Skills />
       <Projects />
       <Resume />
-      {/* <Contact /> */}
       <ScrollToTop />
       <Footer />
     </div>  
