@@ -35,17 +35,17 @@ const ProjectSection =  ({ titleKey, projects, id }) => {
             <ul className={`${styles.link_container}`}>
                 {project.isHost && 
                     <li>
-                        <p>{t(`projects.title.website`)}</p>
                         <a href={project.url} target="_blank" rel="noreferrer" aria-label={t('projects.alt.host')}>
                             <ReactSVG src={website} className={`${styles.icon_image} ${global.square} ${global.hithere} ${styles.website}`} alt={t('projects.alt.host')}/>
                         </a>
+                        <span>{t(`projects.title.website`)}</span>
                     </li>
                 }
                 <li>
-                    <p>{t(`projects.title.github`)}</p>
                     <a href={project.github} target="_blank" rel="noreferrer" aria-label={t('projects.alt.github')}>
                         <img src={github} className={`${styles.icon_image} ${global.square} ${global.hithere}`} alt={t('projects.alt.github')}/>
                     </a>
+                    <span>{t(`projects.title.github`)}</span>
                 </li>
             </ul>
         </div>
