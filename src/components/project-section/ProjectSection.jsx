@@ -20,7 +20,6 @@ const ProjectSection =  ({ titleKey, projects, id }) => {
         <hr></hr>
         <div className={styles.project_description}>
             <div className={styles.icon_container}>
-                <p>{t(`projects.title.technologies`)}</p>
                 <ul className={styles.skill_container}>
                     {project.stacks.map((stack, index) => (
                         <li key={index} className={styles.icon_skill}>
@@ -30,7 +29,7 @@ const ProjectSection =  ({ titleKey, projects, id }) => {
                     ))}
                 </ul>
             </div>
-        <hr></hr>
+        <hr className="bot-bar"></hr>
 
             <ul className={`${styles.link_container}`}>
                 {project.isHost && 
