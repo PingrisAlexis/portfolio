@@ -4,9 +4,9 @@
   justify-content: space-around;
   align-items: center;
   text-align: center;
-  width: 40vw;
+  width: 42vw;
   margin: auto;
-  padding: 2rem;
+  padding: 3.5rem;
   margin-bottom: 10rem;
   margin-top: 20vh;
   border: solid var(--border-width) var(--color-sec);
@@ -22,18 +22,18 @@
   }
   
   h1 {
-    padding: 2rem;
-    @media (max-width: 1000px) {
-      font-size: 3rem !important;
+    font-size: 2.5rem;
+    @media (max-width: 700px) {
+      font-size: 2.3rem;
     }
   }
   div {
     display: flex;
     flex-direction: row;
     p {
-      font-size: 1.9rem !important;
+      font-size: 1.9rem;
       @media (max-width: 600px) {
-        font-size: 1.8rem !important;
+        font-size: 1.7rem;
       }
     }
   }
