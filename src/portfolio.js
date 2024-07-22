@@ -33,6 +33,7 @@
  import la_chouette_agence from '../src/assets/projects/la_chouette_agence.png'
  import space_tourism from '../src/assets/projects/space_tourism.png'
  import portfolio from '../src/assets/projects/portfolio.png' 
+ import ip_address_tracker from '../src/assets/projects/ip_address_tracker.png'
 
  export  const SKILLS_DATA = [ 
     {
@@ -149,7 +150,30 @@
         "isHost": true,
         "isPersonnalProject": true
     },
-
+    {
+        "name": "ip_address_tracker",
+        "type": "Front-End",
+        "stacks": [{
+            "name": "VueJS",
+            "src": vue  
+        },
+        {
+            "name": "TypeScript",
+            "src": typescript  
+        },
+        {
+            "name": "Sass",
+            "src": sass  
+        },
+        ], 
+        "src": ip_address_tracker,
+        "github": "https://github.com/PingrisAlexis/ip-address-tracker",
+        "url": "https://pingrisalexis-ip-address-tracker.netlify.app/",
+        "alt": "IP Address Tracker",
+        "isHost": true, 
+        "isPersonnalProject": true
+    }
+    ,
     {
         "name": "Kasa",
         "type": "Front-End",

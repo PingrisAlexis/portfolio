@@ -92,6 +92,10 @@
     "portfolio": {
       "type": "Front-end Project",
       "description": "My web projects"
+    },
+    "ip_address_tracker": {
+      "type": "Front-end Project",
+      "description": "IP Geolocation Tool"
     }
   },
   "language_switcher": {
