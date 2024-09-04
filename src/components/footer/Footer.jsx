@@ -4,14 +4,17 @@ import { useTranslation } from 'react-i18next'
 import { Contact } from '../index.jsx'
 const Footer = () => {
 
-    const { t } = useTranslation();
-    
+    const { t } = useTranslation()
+    const currentYear = new Date().getFullYear()
+
   return (
     <footer className={styles.footer_container}>
         <Contact />
         <div>
           <p>
-            &copy;{t('footer.copyright')}
+            {t('footer.copyright')}
+            {currentYear}
+            {t('footer.name')}
           </p>
         </div>
 

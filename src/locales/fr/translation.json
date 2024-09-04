@@ -13,9 +13,6 @@
   },
   "home": {
     "presentation": "Bienvenue sur mon portfolio",
-    "iam": "Je suis",
-    "," :",",
-    "a": "un",
     "job": "Développeur Front-End",
     "name": "Alexis PINGRIS",
     "description": "passionné, je perfectionne continuellement mes compétences pour offrir des solutions optimisées et adaptées aux besoins des utilisateurs."
@@ -118,7 +115,7 @@
     "title": "Retourner en haut de page"
   },
     "resume": {
-      "download": "Pingris_Alexis_FR_Dev_Front_End.pdf",
+      "download": "Pingris_Alexis_FR_Dev_Frontend.pdf",
       "alt": "Télécharger",
       "title": "Curriculum vitæ"
     },
@@ -137,6 +134,8 @@
       }
     },
   "footer": {
-    "copyright": "Tous droits réservés - 2023, PINGRIS Alexis"
+    "copyright": "Tous droits réservés - ",
+    "date": "2023",
+    "name": " PINGRIS Alexis"
   }
 }

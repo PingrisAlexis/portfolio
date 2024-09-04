@@ -116,7 +116,7 @@
     "alt": "Scroll to the top"
   },
   "resume": {
-    "download": "Pingris_Alexis_EN_Dev_Front_End.pdf",
+    "download": "Pingris_Alexis_EN_Dev_Frontend.pdf",
     "alt": "Download",
     "title": "Resume"
   },
@@ -135,7 +135,9 @@
     }
   },
   "footer": {
-    "copyright": "Copyright - 2023, PINGRIS Alexis"
+    "copyright": "Copyright - ",
+    "date": "2023",
+    "name": " PINGRIS Alexis"
   }
 }
 
